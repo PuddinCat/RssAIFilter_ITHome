@@ -60,7 +60,7 @@ INIT_PROMPT = """\
 - 某某产品开卖不是目标信息。
 - 电影上线信息不是目标信息。
 - 手机系统更新不是目标信息。
-- 汽车新闻不是目标信息。
+- 和汽车相关的新闻不是目标信息。
 - 软件更新新版本不是目标信息。
 
 # 输入输出格式
@@ -447,6 +447,7 @@ async def send_post(bot: Bot, chat_id: int | str, post: Post) -> bool:
         for _ in range(3):
             try:
                 resp = await aclient.get(post["image"], timeout=10)
+                assert resp.status_code == 200
                 content = resp.content
             except Exception:
                 await asyncio.sleep(1)
