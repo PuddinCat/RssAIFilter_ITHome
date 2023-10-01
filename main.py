@@ -375,12 +375,14 @@ async def send_post(bot: Bot, chat_id: int | str, post: Post) -> bool:
 
 
 def get_filtered_rss():
-    r = requests.get("https://www.ithome.com/rss")
+    r = requests.get("https://www.ithome.com/rss", headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:109.0) Gecko/20100101 Firefox/117.0"
+    })
     tree = ET.parse(StringIO(r.text))
 
     root = tree.getroot()
     chan = root.find("channel")
-    assert chan is not None
+    assert chan is not None, f"{r.status_code=} {r.text}"
     for element in chan.findall("item"):
         title = force_find(element, "title").text
         desc = force_find(element, "description").text
