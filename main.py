@@ -11,6 +11,7 @@ from traceback import print_exc
 import llm
 
 import requests
+import httpx
 import feedparser
 from bs4 import BeautifulSoup
 from telegram import constants, InputMediaPhoto, Bot, error
@@ -18,7 +19,11 @@ from telegram import constants, InputMediaPhoto, Bot, error
 
 llm_state = llm.new_state_evil_next_web()
 llm_state = llm.try_fetch_evil_next_web(llm_state)
-
+aclient = httpx.AsyncClient(
+    headers={
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:109.0) Gecko/20100101 Firefox/117.0"
+    }
+)
 Post = Union[
     Dict[Literal["guid", "title", "link", "description"], str],
     Dict[
@@ -321,15 +326,16 @@ async def send_post(bot: Bot, chat_id: int | str, post: Post) -> bool:
     media = None
     if post.get("image", None):
         content = None
-        for _ in range(10):
+        for _ in range(3):
             try:
-                resp = requests.get(post["image"], timeout=10)
+                resp = await aclient.get(post["image"], timeout=10)
                 content = resp.content
-            except requests.exceptions.RequestException:
+            except Exception:
+                await asyncio.sleep(1)
                 continue
         if content is None:
             return False
-            
+
         media = [
             InputMediaPhoto(
                 content,
@@ -375,9 +381,13 @@ async def send_post(bot: Bot, chat_id: int | str, post: Post) -> bool:
 
 
 def get_filtered_rss():
-    r = requests.get("https://www.ithome.com/rss", headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:109.0) Gecko/20100101 Firefox/117.0"
-    })
+    r = requests.get(
+        "https://www.ithome.com/rss",
+        headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:109.0) Gecko/20100101 Firefox/117.0"
+        },
+        timeout = 60
+    )
     tree = ET.parse(StringIO(r.text))
 
     root = tree.getroot()
@@ -401,6 +411,12 @@ def get_filtered_rss():
     tree.write(TARGET_FILEPATH, encoding="utf-8", xml_declaration=False)
 
 
+async def send_post_or_refuse(scraper, bot, chat_id, post):
+    result = await send_post(bot, chat_id, post)
+    if not result:
+        scraper.refuse(post)
+
+
 async def post_to_telegram(bot, chat_id):
     posts = None
     scraper = Scraper(TARGET_FILEPATH)
@@ -411,11 +427,13 @@ async def post_to_telegram(bot, chat_id):
     except Exception:
         print_exc()
         return
+    tasks = []
     for post in posts:
         logging.info("Sending post %s", post["guid"])
-        result = await send_post(bot, chat_id, post)
-        if not result:
-            scraper.refuse(post)
+        task = asyncio.create_task(send_post_or_refuse(scraper, bot, chat_id, post))
+        tasks.append(task)
+        await asyncio.sleep(0.5)
+    await asyncio.gather(*tasks)
     with open("scraper.json", "w", encoding="utf-8") as file:
         scraper.save(file)
 

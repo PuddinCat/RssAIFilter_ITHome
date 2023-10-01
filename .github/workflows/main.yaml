@@ -7,7 +7,7 @@ on:
 permissions:
   contents: write
 jobs:
-  scrape-lemmy:
+  scrape:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -18,7 +18,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           LLM_JSON_URL: ${{ secrets.LLM_JSON_URL }}
         run: |
-          python3 -m pip install python-telegram-bot requests beautifulsoup4 feedparser
+          python3 -m pip install python-telegram-bot requests beautifulsoup4 feedparser httpx
           python3 main.py
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
