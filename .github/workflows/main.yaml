@@ -1,7 +1,7 @@
 name: Scrape ITHome
 on:
   schedule:
-    - cron: "34 */4 * * *"
+    - cron: "34 */3 * * *"
   workflow_dispatch:
 
 permissions:
