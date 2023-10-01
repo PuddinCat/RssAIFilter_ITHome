@@ -449,12 +449,12 @@ async def send_post(bot: Bot, chat_id: int | str, post: Post) -> bool:
                 resp = await aclient.get(post["image"], timeout=10)
                 assert resp.status_code == 200
                 content = resp.content
+                content = convert_bytes_to_jpg(content)
             except Exception:
                 await asyncio.sleep(1)
                 continue
         if content is None:
             return False
-        content = convert_bytes_to_jpg(content)
         media = [
             InputMediaPhoto(
                 content,
