@@ -3,12 +3,13 @@ import os
 import json
 import logging
 import time
-from io import StringIO
+from io import StringIO, BytesIO
 from xml.etree import ElementTree as ET
 from html.parser import HTMLParser
-from typing import List, Dict, Literal, Union, Generator, Tuple
+from typing import List, Dict, Literal, Union, Generator, Tuple, Iterable
 from traceback import print_exc
-from deepcopy import deepcopy
+from copy import deepcopy
+from PIL import Image
 import llm
 
 import requests
@@ -242,6 +243,57 @@ class Scraper:
         if post["guid"] in self.state["visited"]:
             self.state["visited"].remove(post["guid"])
 
+
+def convert_bytes_to_jpg(bytes_image):
+    img = Image.open(BytesIO(bytes_image)).convert("RGBA")
+    output = BytesIO()
+    background = Image.new("RGB", img.size, (255, 255, 255)).convert("RGBA")
+    img = Image.alpha_composite(background, img).convert("RGB")
+    img.save(output, format="JPEG")
+    jpg_bytes = output.getvalue()
+    output.close()
+    return jpg_bytes
+
+
+async def parse_lines(lines_iter: Iterable[bytes]) -> Generator[str, None, None]:
+    """从openai的stream数据流中解析出所有字符
+
+    Args:
+        lines_iter (Iterable[bytes]): 所有行的迭代器
+
+    Raises:
+        UnknownError: 解析错误
+
+    Yields:
+        Generator[str, None, None]: 返回的每一个字符
+    """
+    async for line in lines_iter:
+        if line == "":
+            continue
+        if not line.startswith("data: "):
+            raise llm.UnknownError("wrong line: " + line)
+        line = line.removeprefix("data: ")
+        if line == "[DONE]":
+            break
+        data = None
+        try:
+            data = json.loads(line)
+        except json.decoder.JSONDecodeError as exp:
+            raise llm.UnknownError() from exp
+
+        if "choices" not in data:
+            raise llm.UnknownError(f"Wrong data: {data}")
+        choice = data["choices"][0]
+        if choice.get("finish_reason"):
+            if choice.get("finish_reason") == "stop":
+                return
+            raise llm.UnknownError(
+                "wrong finish reason: " + choice.get("finish_reason")
+            )
+            # return
+        yield choice["delta"].get("content", "")
+
+
 async def answer_stream_evil_next_web(
     msg: llm.Messages, cfg: llm.Config, state: llm.EvilNextWebState
 ) -> Generator[Tuple[str, llm.Messages, llm.EvilNextWebState], None, None]:
@@ -270,33 +322,36 @@ async def answer_stream_evil_next_web(
     new_message, new_state = llm.append(msg, "assistant", ""), deepcopy(state)
     is_http_success = False
     errors = []
-    for _ in range(5):
+    for _ in range(3):
         url = llm.choose_url(state["urls"], state["counts"])
-        resp = None
         try:
-            resp = await aclient.stream(
+            async with aclient.stream(
                 method="POST",
                 url=f"{url}/api/openai/v1/chat/completions",
                 json=json_data,
                 timeout=5,
-            )
-        except requests.RequestException as exp:
+            ) as resp:
+                if resp.status_code == 429:
+                    errors.append(llm.TooManyRequests())
+                    await asyncio.sleep(10)
+                    continue
+                if resp.status_code != 200:
+                    errors.append(
+                        llm.HTTPError(f"Wrong status code: {resp.status_code}")
+                    )
+                    continue
+                is_http_success = True
+                new_state["counts"][url] = new_state["counts"].get(url, 0) + 1
+                async for delta in parse_lines(resp.aiter_lines()):
+                    new_message[-1]["content"] += delta
+                    yield delta, new_message, new_state
+                return
+        except Exception as exp:
             if url in state["counts"] and state["counts"][url] >= 2:
                 state["counts"][url] -= 1
             errors.append(llm.HTTPError(exp))
             continue
-        if resp.status_code == 429:
-            errors.append(llm.TooManyRequests())
-            continue
-        if resp.status_code != 200:
-            errors.append(llm.HTTPError(f"Wrong status code: {resp.status_code}"))
-            continue
-        is_http_success = True
-        new_state["counts"][url] = new_state["counts"].get(url, 0) + 1
-        for delta in llm.parse_lines(llm.http_iter(resp.iter_lines())):
-            new_message[-1]["content"] += delta
-            yield delta, new_message, new_state
-        return
+
     if is_http_success:
         raise llm.UnknownError(errors)
     raise llm.HTTPError(errors)
@@ -338,6 +393,7 @@ def check_result_needed(guid):
 
 
 def check_result_add(guid, result):
+    print(f"{result=} {guid=}")
     data = {}
     if os.path.exists(CHECK_RESULT_FILEPATH):
         with open(CHECK_RESULT_FILEPATH, "r") as f:
@@ -347,24 +403,24 @@ def check_result_add(guid, result):
         for k, (k_result, add_time) in data.items()
         if time.time() - add_time < 86400 * 5
     }
-
     data[guid] = (result, int(time.time()))
     with open(CHECK_RESULT_FILEPATH, "w") as f:
         json.dump(data, f)
 
 
-def is_target_entry(title, desc_text):
+async def is_target_entry(title, desc_text):
     try:
         prompt = json.dumps(
             {"title": title, "description": desc_text}, ensure_ascii=False
         )
-        data = chatgpt_ask(prompt)
+        data = await chatgpt_ask(prompt)
         assert data is not None
         data = json.loads(data)
         is_useful = data.get("needed_news", True)
         print(f"{is_useful=} {title=}")
         return is_useful
     except Exception:
+        print_exc()
         return True
 
 
@@ -397,7 +453,7 @@ async def send_post(bot: Bot, chat_id: int | str, post: Post) -> bool:
                 continue
         if content is None:
             return False
-
+        content = convert_bytes_to_jpg(content)
         media = [
             InputMediaPhoto(
                 content,
@@ -442,34 +498,41 @@ async def send_post(bot: Bot, chat_id: int | str, post: Post) -> bool:
         return True
 
 
-def get_filtered_rss():
+async def get_filtered_rss():
     r = requests.get(
         "https://www.ithome.com/rss",
         headers={
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:109.0) Gecko/20100101 Firefox/117.0"
         },
-        timeout = 60
+        timeout=60,
     )
     tree = ET.parse(StringIO(r.text))
 
     root = tree.getroot()
     chan = root.find("channel")
     assert chan is not None, f"{r.status_code=} {r.text}"
-    for element in chan.findall("item"):
+
+    async def handle_element(element):
         title = force_find(element, "title").text
         desc = force_find(element, "description").text
         guid = force_find(element, "guid").text
         cached_result = check_result_needed(guid)
         desc = get_html_text(desc)
-
         if cached_result is not None:
             if not cached_result:
                 chan.remove(element)
         else:
-            result = is_target_entry(title, desc)
+            result = await is_target_entry(title, desc)
             check_result_add(guid, result)
             if not result:
                 chan.remove(element)
+
+    tasks = []
+    for element in chan.findall("item"):
+        task = asyncio.create_task(handle_element(element))
+        tasks.append(task)
+        await asyncio.sleep(0.5)
+    await asyncio.gather(*tasks)
     tree.write(TARGET_FILEPATH, encoding="utf-8", xml_declaration=False)
 
 
@@ -477,6 +540,8 @@ async def send_post_or_refuse(scraper, bot, chat_id, post):
     result = await send_post(bot, chat_id, post)
     if not result:
         scraper.refuse(post)
+    with open("scraper.json", "w", encoding="utf-8") as file:
+        scraper.save(file)
 
 
 async def post_to_telegram(bot, chat_id):
@@ -496,15 +561,13 @@ async def post_to_telegram(bot, chat_id):
         tasks.append(task)
         await asyncio.sleep(0.5)
     await asyncio.gather(*tasks)
-    with open("scraper.json", "w", encoding="utf-8") as file:
-        scraper.save(file)
 
 
-def main():
+async def main():
     bot = Bot(os.environ["TELEGRAM_BOT_TOKEN"])
-    get_filtered_rss()
-    asyncio.run(post_to_telegram(bot, chat_id="@ithome_aifilter"))
+    await get_filtered_rss()
+    await post_to_telegram(bot, chat_id="@ithome_aifilter")
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
