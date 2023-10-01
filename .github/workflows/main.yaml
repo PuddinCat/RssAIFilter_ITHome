@@ -1,0 +1,24 @@
+name: Scrape ITHome
+on:
+  schedule:
+    - cron: "34 */4 * * *"
+  push:
+permissions:
+  contents: write
+jobs:
+  scrape-lemmy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+      -
+        name: Do stuff
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          LLM_JSON_URL: ${{ secrets.LLM_JSON_URL }}
+        run: |
+          python3 -m pip install python-telegram-bot requests beautifulsoup4 feedparser
+          python3 main.py
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add . && git commit -m 'Update: '"$(date)" && git push || echo 'nothing to push'
