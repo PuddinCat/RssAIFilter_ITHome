@@ -2,7 +2,7 @@
   <channel>
     <title>IT之家</title>
     <language>zh-cn</language>
-    <pubDate>Fri, 13 Oct 2023 18:38:19 GMT</pubDate>
+    <pubDate>Fri, 13 Oct 2023 21:36:27 GMT</pubDate>
     <generator>ITHome.com</generator>
     <description>IT之家 - 软媒旗下网站</description>
     <link>https://www.ithome.com/</link>
@@ -286,13 +286,6 @@
       <link>https://www.ithome.com/0/724/763.htm</link>
       <guid>https://www.ithome.com/0/724/763.htm</guid>
       <pubDate>Fri, 13 Oct 2023 09:02:46 GMT</pubDate>
-    </item>
-    <item>
-      <title>可并行运行 128 个 LLaMA 2 7B 流，开发者测试苹果 M2 Ultra 芯片模型推理表现</title>
-      <description>&lt;p data-vmark="4901"&gt;IT之家 10 月 13 日消息，据 Y Combinator 论坛消息，名为 Georgi Gerganov 开发者日前使用苹果 M2 Ultra 芯片，进行了一系列 LLaMA 模型推理测试，&lt;span class="accentTextColor"&gt;测试显示该芯片在并行运行 128 个 Llama 2 7B 流时，效果较佳&lt;/span&gt;。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="2ab6"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2023/10/0114776c-7e41-4b18-bbce-2e3c2cb24cc5.png?x-bce-process=image/format,f_auto" w="1113" h="839"&gt;&lt;/p&gt;&lt;figcaption&gt;▲ 图源&amp;nbsp;Georgi Gerganov 在&amp;nbsp;GitHub 披露的测试表现&lt;/figcaption&gt;&lt;p data-vmark="a64f"&gt;据悉，&lt;span class="accentTextColor"&gt;LLaMA 模型推理测试强调内存带宽，而非计算能力，而苹果的 M2 Ultra 芯片号称“内存带宽达&amp;nbsp;800GB/s”，因此推理时效果良好&lt;/span&gt;。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="5273"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2023/10/22d7f354-34f3-43a1-afd8-e5a9167b9438.png?x-bce-process=image/format,f_auto" w="1048" h="1134"&gt;&lt;/p&gt;&lt;figcaption&gt;▲ 图源&amp;nbsp;Georgi Gerganov 在 GitHub 披露的测试表现&lt;/figcaption&gt;&lt;p data-vmark="c662"&gt;不过虽然 M2 Ultra 芯片的内存带宽具有优势，但用户最多只能获得 192 GB RAM，&lt;span class="accentTextColor"&gt;用户花费 5600 美元（IT之家注：国行 44999 人民币）购买搭载 M2 Ultra 芯片及 192GB 运行内存的 Mac Studio，价格足够买一台“拥有 1TB RAM、搭载 RTX 4090 的 PC”&lt;/span&gt;。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="e101"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2023/10/c7a6e957-b163-4f4b-92e5-510166ad8412.png?x-bce-process=image/format,f_auto" w="1440" h="368"&gt;&lt;/p&gt;&lt;figcaption&gt;▲ 图源&amp;nbsp;Y Combinator&lt;/figcaption&gt;&lt;p style="text-align: center;" data-vmark="3a9e"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2023/10/7190fbe6-31c9-4c3c-8394-6cdbb8ddd003.png?x-bce-process=image/format,f_auto" w="1440" h="952"&gt;&lt;/p&gt;&lt;figcaption&gt;▲ 图源 苹果官网&lt;/figcaption&gt;&lt;p data-vmark="2f7a"&gt;Georgi Gerganov 据此认为，如果用户的工作负载（如推理）不需要超过 192 GB，那么选择相关机器时可以更重视“内存带宽”表现，但如果用户有其他工作需求，则可以看看相对应价格的 PC。&lt;/p&gt;&lt;p data-vmark="d824"&gt;&lt;span class="referenceTitle"&gt;参考&lt;/span&gt;&lt;/p&gt;&lt;ul class="custom_reference list-paddingleft-1"&gt;&lt;li class="list-undefined list-reference-paddingleft"&gt;&lt;p data-vmark="c2bc"&gt;&lt;a href="https://news.ycombinator.com/item?id=37846387" target="_blank"&gt;M2 Ultra can run 128 streams of Llama 2 7B in parallel &lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;li class="list-undefined list-reference-paddingleft"&gt;&lt;p data-vmark="7820"&gt;&lt;a href="https://github.com/ggerganov/llama.cpp/pull/3228" target="_blank"&gt;开发者在 GitHub 上提交的测试结果&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <link>https://www.ithome.com/0/724/762.htm</link>
-      <guid>https://www.ithome.com/0/724/762.htm</guid>
-      <pubDate>Fri, 13 Oct 2023 08:57:39 GMT</pubDate>
     </item>
   </channel>
 </rss>
