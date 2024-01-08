@@ -2,10 +2,24 @@
   <channel>
     <title>IT之家</title>
     <language>zh-cn</language>
-    <pubDate>Mon, 08 Jan 2024 18:38:15 GMT</pubDate>
+    <pubDate>Mon, 08 Jan 2024 21:36:47 GMT</pubDate>
     <generator>ITHome.com</generator>
     <description>IT之家 - 软媒旗下网站</description>
     <link>https://www.ithome.com/</link>
+    <item>
+      <title>9500 万美元翻新设备集体诉讼案新进展，苹果开始支付第二笔和解金</title>
+      <description>&lt;p data-vmark="6da2"&gt;IT之家 1 月 9 日消息，苹果公司于 2021 年 10 月同意支付 9500 万美元和解金，以了结一起指控苹果公司向客户提供翻新替换设备违反法律的集体诉讼。&lt;/p&gt;&lt;p data-vmark="073d" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/1/0269679a-27ce-4b2f-a056-a559ff66cee0.jpg?x-bce-process=image/format,f_auto" w="800" h="450" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="3e30"&gt;经历了漫长的 2 年多等待之后，苹果公司近日通知符合申请条件的诉讼用户，&lt;strong&gt;表示将于今年 1 月 9 日开始发放第二批诉讼赔偿金。&lt;/strong&gt;&lt;/p&gt;&lt;p data-vmark="7d7e"&gt;通知内容如下：&lt;/p&gt;&lt;blockquote&gt;&lt;p data-vmark="38b1"&gt;作为该事件的和解管理人，我们向您发送这封礼节性邮件，通知您在 2024 年 1 月 9 日之后，您将收到一封付款通知邮件，其中包含一个通过电子方式申请付款的链接。收到该邮件后，您需要在 2024 年 5 月 15 日之前申请付款。&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-vmark="dab1"&gt;IT之家注：原告方指控称，这家库比蒂诺科技巨头在客户提出 AppleCare 维修请求时提供了翻新机、而不是全新的设备，此举违反了美国的法律法规。&lt;/p&gt;&lt;p data-vmark="c03a"&gt;根据拟议的和解条款，一旦扣除律师费和其他费用，预计这一集体将获得 6340 万美元至 6810 万美元的赔偿。&lt;/p&gt;&lt;p data-vmark="d050"&gt;苹果于 2022 年 1 月公布和解细节，于 2012 年 7 月 20 日 - 2021 年 9 月 30 日期间为 iPhone / iPad / iPod 购买了 AppleCare / AppleCare+、并领到了苹果翻新机的客户，都可提出这方面的主张。&lt;/p&gt;&lt;p data-vmark="65a3"&gt;相关阅读：&lt;/p&gt;&lt;p data-vmark="fb4a"&gt;《&lt;a href="https://www.ithome.com/0/579/093.htm" target="_blank"&gt;苹果同意支付 9500 万美元，解决翻新设备不等同于新设备的诉讼&lt;/a&gt;》&lt;/p&gt;</description>
+      <link>https://www.ithome.com/0/744/073.htm</link>
+      <guid>https://www.ithome.com/0/744/073.htm</guid>
+      <pubDate>Mon, 08 Jan 2024 21:21:02 GMT</pubDate>
+    </item>
+    <item>
+      <title>苹果迎接 Vision Pro 头显，发布新版 TestFlight 和 Xcode</title>
+      <description>&lt;p data-vmark="57d1"&gt;IT之家 1 月 9 日消息，苹果公司为了迎接今年 2 月 2 日在美国上市的 Vision Pro 头显，&lt;strong&gt;今天更新发布了 Xcode 15.2 和 TestFlight 3.5 版本。&lt;/strong&gt;&lt;/p&gt;&lt;p data-vmark="2ce3" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/1/09016cd1-85e7-4ef4-8260-29eb6309d6d2.jpg?x-bce-process=image/format,f_auto" w="800" h="450"&gt;&lt;/p&gt;&lt;p data-vmark="68e9"&gt;根据更新日志，Xcode 15.2 配备了 visionOS SDK，并修复了现有 visionOS 系统中的诸多 BUG。&lt;/p&gt;&lt;p data-vmark="1036"&gt;&lt;strong&gt;开发者可以使用 Xcode 15.2 为 Apple Vision Pro 头戴设备创建 visionOS 应用程序&lt;/strong&gt;，本次更新还包含 iOS 17.2、iPadOS 17.2、tvOS 17.2、watchOS 10.2 和 macOS Sonoma 14.2 的 SDK。&lt;/p&gt;&lt;p data-vmark="12c8"&gt;&lt;strong&gt;TestFlight 3.5 更新首次支持 Beta 测试 visionOS 应用程序&lt;/strong&gt;，还支持在 Vision Pro 头显上使用兼容的 iOS 和 iPadOS 应用程序。&lt;/p&gt;&lt;p data-vmark="0744"&gt;苹果表示自今天开始，为 visionOS 创建的应用程序可以提交到 Apple Vision Pro 应用商店。许多 iPhone 和 iPad 应用程序可以在未经修改的情况下在 Apple Vision Pro 上运行，不过开发人员可以针对该头显进行优化调整。&lt;/p&gt;&lt;p data-vmark="f6df"&gt;苹果计划在 Vision Pro 商店默认发布 iPhone 和 iPad 应用程序，但开发者可以通过 App Store Connect 选择退出。&lt;/p&gt;&lt;p data-vmark="eda6"&gt;IT之家此前报道，苹果公司宣布其混合现实头显 Vision Pro 将于 2 月 2 日在所有美国 Apple Store 零售店和苹果官网正式发售，1 月 19 日星期五开始预购。&lt;/p&gt;</description>
+      <link>https://www.ithome.com/0/744/072.htm</link>
+      <guid>https://www.ithome.com/0/744/072.htm</guid>
+      <pubDate>Mon, 08 Jan 2024 21:08:11 GMT</pubDate>
+    </item>
     <item>
       <title>理想汽车、长城、极氪、小米宣布与英伟达 NVIDIA DRIVE 车载自动驾驶平台达成合作</title>
       <description>&lt;p data-vmark="5bf9"&gt;IT之家 1 月 9 日消息，英伟达今日在 CES 2024 上宣布，理想汽车已选择 NVIDIA DRIVE Thor 中央车载计算机，用于下一款车型。&lt;/p&gt;&lt;p data-vmark="fc7e"&gt;英伟达还宣布与汽车制造商 &lt;span class="accentTextColor"&gt;GWM（长城汽车）、ZEEKR（极氪）和小米&lt;/span&gt;达成合作，这几家厂商已采用 NVIDIA DRIVE Orin 平台为其智能自动驾驶系统提供动力。&lt;/p&gt;&lt;p data-vmark="1243" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/1/5b14aa88-3908-4a0d-8f37-8c9b17e9157c.png?x-bce-process=image/watermark,image_aW1nL3dhdGVybWFyay9xYy9xYzExOS5wbmc=,t_100,g_3,y_328,x_12,a_0/format,f_auto" w="775" h="838"&gt;&lt;/p&gt;&lt;p data-vmark="5231"&gt;英伟达汽车副总裁吴新宙表示：“交通运输行业正在采用集中式计算来实现高度自动化和自动驾驶。当今智能汽车首选的 AI 汽车计算机是 NVIDIA DRIVE Orin，汽车制造商越来越多地寻求其后继产品 NVIDIA DRIVE Thor 的先进功能和 AI 性能来制定未来的车辆路线图。”&lt;/p&gt;&lt;p data-vmark="6039"&gt;据介绍，DRIVE Thor 是英伟达下一代集中式汽车计算机，将广泛的智能功能集成到单个 AI 计算平台中，提供自动驾驶和泊车功能、驾驶员和乘客监控以及 AI 座舱功能。&lt;/p&gt;&lt;p data-vmark="8044"&gt;理想汽车目前使用两个 DRIVE Orin 处理器为其 L 系列车型的辅助驾驶系统 AD Max 提供动力。新的 AD Max 3.0 升级将系统过渡到以 AI 大模型为主的端到端算法架构。&lt;/p&gt;&lt;p data-vmark="8072"&gt;长城汽车宣布，将基于 DRIVE Orin 集中计算平台打造自主研发的高端智能驾驶系统 Coffee Pilot。Coffee Pilot 可以支持泊车、高速和城市场景，实现全场景智能导航和辅助驾驶功能，无需高精度地图。&lt;/p&gt;&lt;p data-vmark="a5bb"&gt;IT之家从公告中获悉，长城汽车与英伟达合作开发了这套智能驾驶系统，&lt;span class="accentTextColor"&gt;并将于今年上半年推出搭载该系统的首款车型&lt;/span&gt;。NOA 城市导航辅助驾驶、跨层记忆泊车等智能驾驶功能将率先在长城魏牌车型上推出。&lt;/p&gt;&lt;p data-vmark="86c9"&gt;小米汽车宣布推出首款电动汽车 SU7，&lt;span class="accentTextColor"&gt;该车基于双 DRIVE Orin 配置打造&lt;/span&gt;，可实现高速公路辅助驾驶功能。&lt;/p&gt;</description>
@@ -363,19 +377,5 @@
       <guid>https://www.ithome.com/0/744/002.htm</guid>
       <pubDate>Mon, 08 Jan 2024 09:58:50 GMT</pubDate>
     </item>
-    <item>
-      <title>国内航天火箭发射场最大容积“加油站”将在海南商业发射场应用</title>
-      <description>&lt;p data-vmark="6e8e"&gt;IT之家 1 月 8 日消息，据北京航天发射技术研究所官方消息，近日，由火箭院北京航天发射技术研究所自主研制的 &lt;span class="accentTextColor"&gt;400 立方米液氧卧式固定容器完成出厂评审&lt;/span&gt;，将应用在海南商业航天发射场发射区加注供气系统中。&lt;/p&gt;&lt;p data-vmark="7505" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/1/53693d2c-7b00-419f-9395-72e5fcd8418d.png?x-bce-process=image/watermark,image_aW1nL3dhdGVybWFyay9xYy9xYzg2LnBuZw==,t_100,g_3,y_68,x_13,a_0/format,f_auto" w="865" h="740"&gt;&lt;/p&gt;&lt;p data-vmark="3c93"&gt;据介绍，&lt;span class="accentTextColor"&gt;该设备是目前国内航天发射场最大的液氧卧式固定容器&lt;/span&gt;，也是加注系统最关键、最复杂的大型设备之一。&lt;/p&gt;&lt;p data-vmark="2532"&gt;加注供气系统是海南商业航天发射场发射区非常重要的组成部分，负责在发射前加注液氧、液氢、煤油、甲烷等推进剂，在发射任务期间提供空气、氦气、氮气等供气保障，&lt;span class="accentTextColor"&gt;是火箭发射的“加油站”&lt;/span&gt;。&lt;/p&gt;&lt;p data-vmark="5a8e"&gt;400 立方米液氧卧式固定容器每日蒸发率优于行业指标 0.009%-0.026%，具备真空绝热、安全稳定的技术优势，&lt;span class="accentTextColor"&gt;达行业领先水平&lt;/span&gt;。&lt;/p&gt;&lt;p data-vmark="ba2c"&gt;此贮存容器还可应用于航空、医疗、能源、化工等行业的低温液态气体、生物样本等大型真空储存中，为火箭院进一步扩大航天技术应用产业市场奠定了基础。&lt;/p&gt;&lt;p data-vmark="a74d"&gt;&lt;a href="https://www.ithome.com/0/742/335.htm" target="_blank"&gt;IT之家 2023 年 12 月 29 日援引央视新闻报道&lt;/a&gt;，我国首个开工建设的商业航天发射场 —— 海南国际商业航天发射中心一号发射工位已正式竣工。&lt;/p&gt;&lt;p data-vmark="c70f"&gt;海南国际商业航天发射中心 2022 年 7 月开工，&lt;span class="accentTextColor"&gt;有望于今年（2024 年）实现常态化发射&lt;/span&gt;。&lt;/p&gt;&lt;p data-vmark="5796" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2023/12/d0c45188-9422-4bf9-9668-fb153c529435.png?x-bce-process=image/watermark,image_aW1nL3dhdGVybWFyay9xYy9xYzYxLnBuZw==,t_100,g_3,y_59,x_9,a_0/format,f_auto" w="594" h="1470"&gt;&lt;/p&gt;</description>
-      <link>https://www.ithome.com/0/744/000.htm</link>
-      <guid>https://www.ithome.com/0/744/000.htm</guid>
-      <pubDate>Mon, 08 Jan 2024 09:54:50 GMT</pubDate>
-    </item>
-    <item>
-      <title>奇瑞星途凌云明日将迎首次 OTA 升级，增加新主题、高通芯片优化等</title>
-      <description>&lt;p data-vmark="d087"&gt;IT之家 1 月 8 日消息，IT之家从星途官方公众号获悉，星途凌云将于 1 月 9 日开启首次 OTA 升级，本次升级将会带来 4 大功能拓展以及 22 项体验升级。&lt;/p&gt;&lt;p data-vmark="501c" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/1/f6ec464b-62d6-426d-9db8-3f004ee08348.jpg?x-bce-process=image/format,f_auto" w="1080" h="5053" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="6e6f"&gt;本次更新将带来一套“星引”主题，与目前现有主题界面对比可参见图中“01”部分；此外，新车还将新增电子版使用手册，能够更加便捷地查看车辆功能的操作方式；不仅如此，新车还将提供方向盘按键切换 AM 音源功能。&lt;/p&gt;&lt;p data-vmark="59ff" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/1/3548b517-e708-48c4-99f6-5b0f21a7258f.png?x-bce-process=image/format,f_auto" w="1080" h="3426" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="1bd5"&gt;在情景模式下，星途凌云还新增了座椅按摩，可以对主 / 副驾座椅的按摩力度以及按摩类型进行调节。最后，主动降噪参数优化、仪表显示车道线、高通芯片优化等升级也将为用户带来更好的使用体验。&lt;/p&gt;</description>
-      <link>https://www.ithome.com/0/743/999.htm</link>
-      <guid>https://www.ithome.com/0/743/999.htm</guid>
-      <pubDate>Mon, 08 Jan 2024 09:47:55 GMT</pubDate>
-    </item>
-  </channel>
+    </channel>
 </rss>
