@@ -2,7 +2,7 @@
   <channel>
     <title>IT之家</title>
     <language>zh-cn</language>
-    <pubDate>Thu, 15 Feb 2024 15:36:36 GMT</pubDate>
+    <pubDate>Thu, 15 Feb 2024 18:36:37 GMT</pubDate>
     <generator>ITHome.com</generator>
     <description>IT之家 - 软媒旗下网站</description>
     <link>https://www.ithome.com/</link>
@@ -357,13 +357,6 @@
       <link>https://www.ithome.com/0/750/371.htm</link>
       <guid>https://www.ithome.com/0/750/371.htm</guid>
       <pubDate>Thu, 15 Feb 2024 05:33:48 GMT</pubDate>
-    </item>
-    <item>
-      <title>Chromium 开发者推进网络货币化规范落地，探索打赏等小额支付 API</title>
-      <description>&lt;p data-vmark="a192"&gt;IT之家 2 月 15 日消息，Chromium 软件工程师正尝试推广和普及小额免密支付 API，实现网络货币化规范，帮站长在广告、订阅等其他传统方式之外开辟新的收入渠道。&lt;/p&gt;&lt;p data-vmark="bc06" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/2/cee8b072-478d-412d-8b1f-ed604873e858.jpg?x-bce-process=image/format,f_auto" w="708" h="398"&gt;&lt;/p&gt;&lt;p data-vmark="b2d2"&gt;软件工程师亚历山大・苏尔科夫（Alexander Surkov）近日发布提议，在 Chromium 源代码中引入相关代码，构建安全、便携的在线小额支付系统。&lt;/p&gt;&lt;p data-vmark="87e9"&gt;苏尔科夫构想的网络货币化 API 具备&lt;strong&gt;“小额支付”和“无需用户交互”的特点&lt;/strong&gt;，其部署方式也非常简单，只需要在 HTML 代码的“link”元素中添加“&lt;strong&gt;rel=monetization&lt;/strong&gt;”属性即可。&lt;/p&gt;&lt;p data-vmark="7e4e"&gt;站长可以将新属性添加到网站代码中，而对于用户来说，需要先设置 Gatehub、Fynbos 等数字钱包，访问该页面之后会收到付款订单，用户也可以设置实现免密支付&lt;strong&gt;。&lt;/strong&gt;&lt;/p&gt;&lt;p data-vmark="8ee8"&gt;苏尔科夫说，&lt;strong&gt;网络货币化有助于促进用户 "打赏" 等良性机制，对于站长来说也可以获得更多的收益。&lt;/strong&gt;&lt;/p&gt;&lt;h3 data-vmark="f71c"&gt;关于网络货币化&lt;/h3&gt;&lt;p data-vmark="952e"&gt;长期以来，网络平台一直未提供转账功能。结果，网络饱受大量广告和腐坏的商业模式的桎梏。网络货币化提供一种开放、原生、有效、自动的方式来补偿创作者。&lt;/p&gt;&lt;p data-vmark="0de8"&gt;自 20 世纪 90 年代起，就有人提出了涉及小额资金的在线小额支付系统，但至今未获成功。&lt;/p&gt;&lt;p data-vmark="5c7e"&gt;网络货币化仍处于原型阶段，不属于万维网联盟（W3C）的标准体系，不会很快成为一项标准化的网络技术。&lt;/p&gt;&lt;p data-vmark="e93c"&gt;苏尔科夫于 2023 年 8 月发布文件，表示新的网络货币化技术已经经历了原型设计和实验的“重要历程”，并确定了 HTML 集成、用户交互和通信协议的相关方法，但最终整合到浏览器之前，还需要进一步地打磨。&lt;/p&gt;&lt;p data-vmark="2f06"&gt;IT之家附上&lt;a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/4Rqw4SbjO88/m/j7x8sTyzAAAJ?pli=1" target="_blank" title="提案原文地址"&gt;提案原文地址&lt;/a&gt;，感兴趣的用户可以深入阅读。&lt;/p&gt;</description>
-      <link>https://www.ithome.com/0/750/369.htm</link>
-      <guid>https://www.ithome.com/0/750/369.htm</guid>
-      <pubDate>Thu, 15 Feb 2024 04:53:14 GMT</pubDate>
     </item>
   </channel>
 </rss>
