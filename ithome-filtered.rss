@@ -2,7 +2,7 @@
   <channel>
     <title>IT之家</title>
     <language>zh-cn</language>
-    <pubDate>Sat, 11 May 2024 15:37:30 GMT</pubDate>
+    <pubDate>Sat, 11 May 2024 18:36:25 GMT</pubDate>
     <generator>ITHome.com</generator>
     <description>IT之家 - 软媒旗下网站</description>
     <link>https://www.ithome.com/</link>
@@ -386,13 +386,6 @@ sudo&amp;nbsp;apt&amp;nbsp;install&amp;nbsp;rpi-connect&lt;/pre&gt;&lt;p data-vm
       <link>https://www.ithome.com/0/767/277.htm</link>
       <guid>https://www.ithome.com/0/767/277.htm</guid>
       <pubDate>Sat, 11 May 2024 08:50:26 GMT</pubDate>
-    </item>
-    <item>
-      <title>144 核 180MB 缓存，英特尔 Sierra Forest 处理器再次现身测试数据库</title>
-      <description>&lt;p data-vmark="477e"&gt;IT之家 5 月 11 日消息，近日又有一份英特尔 Sierra Forest 处理器的测试成绩现身 Geekbench 基准测试数据库。&lt;/p&gt;&lt;p data-vmark="8e16" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/5/b5998882-7011-4bda-b236-bf18d2cd5069.jpg?x-bce-process=image/watermark,image_aW1nL3dhdGVybWFyay9xYy9xYzE1NS5wbmc=,t_100,g_3,y_683,x_16,a_0/format,f_auto" w="1008" h="2596" alt="测试成绩"&gt;&lt;/p&gt;&lt;p data-vmark="1ca3"&gt;该测试样本采用英特尔 Beechnut City 测试主板平台，运行 CentOS Stream 9 操作系统，整体内存容量超过 1000GB。&lt;/p&gt;&lt;p data-vmark="a40f"&gt;以往爆料信息显示，&lt;span class="accentTextColor"&gt;Beechnut City 是一块双路的 LGA4710 平台主板&lt;/span&gt;，支持安装 2 颗 -SP 版本的至强 6 系列处理器；而同更高端的 -AP 系列至强 6&amp;nbsp;处理器配套的双路测试主板平台代号为 Avenue City。&lt;/p&gt;&lt;p data-vmark="1d21"&gt;最近曝光的这份测试样本配置了两颗达到&amp;nbsp;Sierra Forest-SP 系列最大规格（144 核心）的处理器，共计 288 核心 288 线程。&lt;/p&gt;&lt;p data-vmark="86a7"&gt;每颗 144 核心的 Sierra Forest-SP 处理器均包含 72MB 的 L2 缓存和 108MB 的 L3 缓存，单 CPU&lt;span class="accentTextColor"&gt; 总高速缓存容量达到 180MB&lt;/span&gt;。&lt;/p&gt;&lt;p data-vmark="16b6"&gt;不过在频率方面，该样本维持了同去年 12 月测试结果中相同的 2.2GHz 基础频率。&lt;/p&gt;&lt;p data-vmark="757f"&gt;&lt;a href="https://www.ithome.com/0/754/310.htm" target="_blank"&gt;IT之家早前报道&lt;/a&gt;中曾提到，英特尔 CEO 帕特・基辛格（Pat Gelsinger）计划在 2024 年台北国际电脑展的主题演讲上分享“英特尔至强处理器如何提供卓越的每瓦效能效率”。&lt;/p&gt;&lt;p data-vmark="70fe"&gt;届时有望正式发布代号“Sierra Forest”的至强 6 处理器能效核版。&lt;/p&gt;</description>
-      <link>https://www.ithome.com/0/767/276.htm</link>
-      <guid>https://www.ithome.com/0/767/276.htm</guid>
-      <pubDate>Sat, 11 May 2024 08:39:38 GMT</pubDate>
     </item>
   </channel>
 </rss>
