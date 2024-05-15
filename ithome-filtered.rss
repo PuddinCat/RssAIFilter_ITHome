@@ -2,7 +2,7 @@
   <channel>
     <title>IT之家</title>
     <language>zh-cn</language>
-    <pubDate>Wed, 15 May 2024 15:36:56 GMT</pubDate>
+    <pubDate>Wed, 15 May 2024 18:38:06 GMT</pubDate>
     <generator>ITHome.com</generator>
     <description>IT之家 - 软媒旗下网站</description>
     <link>https://www.ithome.com/</link>
@@ -338,12 +338,5 @@
       <guid>https://www.ithome.com/0/768/178.htm</guid>
       <pubDate>Wed, 15 May 2024 08:50:19 GMT</pubDate>
     </item>
-    <item>
-      <title>智己回应 LS6 自动泊车刮蹭事故：将持续优化应对能力，已与用户完成协商</title>
-      <description>&lt;p data-vmark="6a0b"&gt;IT之家 5 月 15 日消息，智己汽车官微今日就一 LS6 自动泊车刮蹭工字金属立柱事故进行说明：已经与用户协商完处理方案，&lt;span class="accentTextColor"&gt;后续将持续优化自动泊车对于弱势场景的应对能力，并通过 OTA 升级推送落地&lt;/span&gt;。&lt;/p&gt;&lt;p data-vmark="9529"&gt;稍早之前，智己汽车科技有限公司自动驾驶中心项目总监王康发文详细解释这次事故：本次事故场景中，该细柱为“工”字形金属结构，且尺寸偏小；&lt;span class="accentTextColor"&gt;导致车载超声波雷达、摄像头等感知传感器构建出的障碍物位置精度不足，造成车辆与金属细柱发生刮（剐）蹭&lt;/span&gt;。&lt;/p&gt;&lt;p data-vmark="262b"&gt;王康表示，针对类似自动泊车弱势场景，团队已采集了大量细柱场景数据进行模型训练，同步快速迭代性能更稳定的融合感知算法。通过最新的仿真测评，类似场景中金属细柱的检出能力和检出位置准确性已有大幅度提高；&lt;span class="accentTextColor"&gt;在通过进一步优化验证后，将通过 OTA 进行升级推送&lt;/span&gt;。&lt;/p&gt;&lt;p data-vmark="ffb5"&gt;智己汽车官微、王康均针对此事向涉事车主致歉，王康更宣布自己作为智驾团队负责人，&lt;span class="accentTextColor"&gt;将自费承担该用户的维修费用&lt;/span&gt;。&lt;/p&gt;&lt;p data-vmark="427d" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/5/af0029c3-69e4-4dd6-bf8a-7cd6c618e6fe.png?x-bce-process=image/format,f_auto" w="798" h="781" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="abf8"&gt;IT之家附前情提要：近日网传视频显示，一位 LS6 车主在到达停车场后，试图使用自动泊车功能将车辆停入车位。然而该车在向车位倒车过程中，副驾侧车头与停车场的柱子发生刮蹭，泊车系统和车主均未发现异常，车辆仍继续往后倒车。最终，这辆车成功泊入了车位，但前保险杠已被撞得面目全非。&lt;/p&gt;&lt;p data-vmark="c217" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/5/794f2519-d3c8-4c28-8f4d-bf0b33fb82c0.png?x-bce-process=image/format,f_auto" w="794" h="591" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="a5b1" style="text-align: center;"&gt;&lt;a class="ithome_super_player" contenteditable="false" target="_blank" href="https://video.weibo.com/show?fid=1034:5034307811737673"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/5/867ce503-ee17-4fda-8f1b-c14c12d5c844.jpg?x-bce-process=image/format,f_auto" w="1440" h="810"&gt;&lt;/a&gt;&lt;/p&gt;</description>
-      <link>https://www.ithome.com/0/768/173.htm</link>
-      <guid>https://www.ithome.com/0/768/173.htm</guid>
-      <pubDate>Wed, 15 May 2024 08:28:34 GMT</pubDate>
-    </item>
-  </channel>
+    </channel>
 </rss>
