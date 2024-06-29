@@ -2,7 +2,7 @@
   <channel>
     <title>IT之家</title>
     <language>zh-cn</language>
-    <pubDate>Sat, 29 Jun 2024 15:36:34 GMT</pubDate>
+    <pubDate>Sat, 29 Jun 2024 18:37:41 GMT</pubDate>
     <generator>ITHome.com</generator>
     <description>IT之家 - 软媒旗下网站</description>
     <link>https://www.ithome.com/</link>
@@ -19,6 +19,13 @@
       <link>https://www.ithome.com/0/778/625.htm</link>
       <guid>https://www.ithome.com/0/778/625.htm</guid>
       <pubDate>Sat, 29 Jun 2024 15:21:10 GMT</pubDate>
+    </item>
+    <item>
+      <title>惊喜不断：AMD 锐龙 9000X3D 系列处理器被曝将全面支持超频</title>
+      <description>&lt;p data-vmark="c78e"&gt;IT之家 6 月 29 日消息，AMD 近两代推出的锐龙 X3D 处理器被视为市面上最佳游戏处理器之一，在大部分网游中都能有着接近甚至远超旗舰 CPU 的性能，但这两代 X3D 处理器都不支持官方超频。&lt;/p&gt;&lt;p data-vmark="2543"&gt;Wccftech 报道称，AMD Ryzen 9000X3D CPU 可提供全面的超频支持，这也是 AMD 锐龙 X3D 芯片首次支持官方超频。&lt;/p&gt;&lt;p data-vmark="a315" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/6/0ebdfb5a-f29a-4b15-a559-4f65c25c0e89.jpg?x-bce-process=image/format,f_auto" w="1440" h="810" data-weibo="0"&gt;&lt;/p&gt;&lt;p data-vmark="b1ee"&gt;AMD 最初在推出锐龙 5000X3D 处理器时采取了非常保守的做法，其温度和电压都经过了严格限制，而且官方并未提供任何调优选项。&lt;/p&gt;&lt;p data-vmark="39e7" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/6/5a4b330e-e144-4d14-997b-0aa6de4c6a98.jpg?x-bce-process=image/format,f_auto" w="1440" h="809" data-weibo="1"&gt;&lt;/p&gt;&lt;p data-vmark="a675"&gt;后来，AMD 在推出采用第二代 3D V-Cache 技术的&amp;nbsp;Zen 4 架构锐龙 7000 系列 X3D 处理器后，为发烧友提供了更多调优选项，包括 Precision Boost Overdrive（PBO）和 Curve Optimizer（CO）功能，以及 EXPO 内存超频功能，深受玩家追捧。&lt;/p&gt;&lt;p data-vmark="8bf0" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/6/197dfd68-56a1-4008-9499-b40ce1bc50a2.jpg?x-bce-process=image/format,f_auto" w="1440" h="900" data-weibo="2"&gt;&lt;/p&gt;&lt;p data-vmark="4f1b"&gt;下一代采用 Zen 5 架构的锐龙 9000X3D 处理器将拥有更多令人兴奋的极客功能，并完全支持超频设置，AM5 平台的玩家们将能够在新一代 X3D 处理器上享受完整的超频支持。&lt;/p&gt;&lt;p data-vmark="8f41" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/6/3cdea034-8702-4e26-be57-70b5a9bede6a.jpg?x-bce-process=image/format,f_auto" w="1440" h="780" data-weibo="3"&gt;&lt;/p&gt;&lt;p data-vmark="8258"&gt;这表明 AMD 已经对 3D 缓存芯片设计进行了微调，而且经过了超频大师的检验，确定不会因为简单超频而烧毁，相信这也将吸引更多发烧友玩家加入到 X3D 阵营。&lt;/p&gt;&lt;p data-vmark="52a1" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/6/7f5f42dc-f712-4945-b4eb-e2ab64fd5ba3.png?x-bce-process=image/format,f_auto" w="1440" h="810" data-weibo="4"&gt;&lt;/p&gt;&lt;p data-vmark="87c0"&gt;根据 Wccftech 的说法，AMD 锐龙 9000 系列 CPU 温度和功耗更低，而且 DDR5 超频性能大大加强，而且玩家仍可继续使用之前的&amp;nbsp;DDR5-6000 内存，不过其内存频率上限将提高到 6400 MT/s，同时保持 1:1 FCLK 与 MCLK 比率。&lt;/p&gt;&lt;p data-vmark="c8bd"&gt;据称，该系列处理器还将以 1:2 的比例在 4-DIMM 模式下支持高达 8000 MT/s的 EXPO 内存。此外，已经有主板厂商在开发 9000 MT/s甚至 10000 MT/s的内存支持，更多详情可见IT之家此前报道。&lt;/p&gt;&lt;ul class=" list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="8418"&gt;AMD Ryzen 3000“Zen 2”甜点频率 - DDR4-3800&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="64d4"&gt;AMD Ryzen 5000“Zen 3”甜点频率 – DDR4-4000&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="4675"&gt;AMD Ryzen 7000“Zen 4”甜点频率 – DDR5-6000&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="c06f"&gt;AMD Ryzen 9000“Zen 5”甜点频率 – DDR5-6000（上限&amp;nbsp;6400 MT/s）&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p data-vmark="a924"&gt;相关阅读：&lt;/p&gt;&lt;p data-vmark="89ba"&gt;《&lt;a href="https://www.ithome.com/0/778/480.htm" target="_blank"&gt;AMD 锐龙 9000 系列 CPU 曝料：温度和功耗更低、增强 DDR5 超频性能&lt;/a&gt;》&lt;/p&gt;</description>
+      <link>https://www.ithome.com/0/778/627.htm</link>
+      <guid>https://www.ithome.com/0/778/627.htm</guid>
+      <pubDate>Sat, 29 Jun 2024 15:14:51 GMT</pubDate>
     </item>
     <item>
       <title>夏普推出 5.7 英寸 LCD 小屏手机 Simple Sumaho 7：搭载高通骁龙 695</title>
@@ -404,13 +411,6 @@
       <link>https://www.ithome.com/0/778/551.htm</link>
       <guid>https://www.ithome.com/0/778/551.htm</guid>
       <pubDate>Sat, 29 Jun 2024 07:23:26 GMT</pubDate>
-    </item>
-    <item>
-      <title>电动汽车是未来趋势：福特 CEO 吉姆法利呼吁美国抓住发展机遇</title>
-      <description>&lt;p data-vmark="175f"&gt;IT之家 6 月 29 日消息，电动汽车如今已逐渐成为市场主流，但对于许多人来说油车仍是第一选择。&lt;/p&gt;&lt;p data-vmark="0c95"&gt;福特汽车首席执行官吉姆法利（Jim Farley）在 X 上发帖呼吁美国各行各业都能支持电动汽车的发展，并希望消费者亲自去试驾体验一下电动汽车的乐趣。他认为，只要他们愿意尝试一下，即便是像他这样的“汽车迷”（IT之家注：在这里指偏爱油车的人）也会爱上电动汽车。&lt;/p&gt;&lt;p data-vmark="f376" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/6/eed6ebb6-2ce2-4c79-b35b-f47171e16bb1.png?x-bce-process=image/format,f_auto" w="598" h="469" data-weibo="0"&gt;&lt;/p&gt;&lt;p data-vmark="39a2"&gt;“我们正处于一场全球竞争中，为电动汽车成为交通运输巨头的未来而战。美国不能将创新领导权拱手让给中国、欧洲或任何其他地区。”&lt;/p&gt;&lt;p data-vmark="39bd"&gt;他还提到了自己对于福特 F-150 Lightning Platinum 的驾驶感受，“它出奇的安静且平稳。毫不费力的加速过程会让你脸上不自觉地露出傻笑。每天早上，我的车都能充满 300 英里的续航里程。从来不需要去加油站。更重要的是，我的 F-150 拥有一个巨大的可锁式前备箱，与皮卡货斗完美相配，而且它还可以像一个移动发电机一样，为工地、营地、派对，甚至为另一辆电动汽车供电，或者为我的家供电”。&lt;/p&gt;&lt;p data-vmark="a861" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/6/fd52df0f-af41-4cf4-9027-382dd308af90.jpg" w="1440" h="1920" data-weibo="1" class="nowebp"&gt;&lt;/p&gt;&lt;figcaption&gt;▲ 图源：@Jim Farley&lt;/figcaption&gt;&lt;p data-vmark="c9d0"&gt;他还提到，当下存在许多关于电动汽车的误解和偏见，他之前也曾目睹过类似的情况，例如福特将 F-150 的车身改成铝制。这一决定虽然后来被证明是正确的，但当时也受到了很多批评。&lt;/p&gt;&lt;p data-vmark="094e"&gt;他指出，“创新需要时间才能站稳脚跟。但一旦成功，这种转变将是深远且持久的。我相信，下一场汽车行业的重大转变将是走向软件定义和电动汽车”。&lt;/p&gt;&lt;p data-vmark="b3f0"&gt;他还强调，电动汽车对于大多数主流消费者而言已经是更优的选择，因为电动汽车正变得越来越实惠，而且拥车成本也比同级别的油车更低。&lt;/p&gt;&lt;p data-vmark="0fc2"&gt;吉姆法利写道，“最重要的是，人们一旦试驾过电动汽车通常就很难再回去了。全球近 70% 的电动汽车车主表示他们以后只会购买电动汽车”。&lt;/p&gt;</description>
-      <link>https://www.ithome.com/0/778/550.htm</link>
-      <guid>https://www.ithome.com/0/778/550.htm</guid>
-      <pubDate>Sat, 29 Jun 2024 07:20:36 GMT</pubDate>
     </item>
   </channel>
 </rss>
