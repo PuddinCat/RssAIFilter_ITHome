@@ -14,13 +14,13 @@ jobs:
       - uses: actions/setup-python@v4
       - name: Install python packages
         run: python3 -m pip install python-telegram-bot requests beautifulsoup4 feedparser httpx pillow
+      - name: Config Github
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
       - name: Just Do It
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           LLM_JSON_URL: ${{ secrets.LLM_JSON_URL }}
-        run: python3 main.py
-      - name: Save states
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add . && git commit -m 'Update: '"$(date)" && git push || echo 'nothing to push'
+          python3 main.py && git add . && git commit -m 'Update: '"$(date)" && git push || echo 'nothing to push'
