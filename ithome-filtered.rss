@@ -2,10 +2,108 @@
   <channel>
     <title>IT之家</title>
     <language>zh-cn</language>
-    <pubDate>Tue, 01 Oct 2024 02:12:29 GMT</pubDate>
+    <pubDate>Tue, 01 Oct 2024 03:48:06 GMT</pubDate>
     <generator>ITHome.com</generator>
     <description>IT之家 - 软媒旗下网站</description>
     <link>https://www.ithome.com/</link>
+    <item>
+      <title>微软发布 Win11 Dev 26120.1912 预览版：支持 6 GHz Wi-Fi 连接，优化任务管理器等</title>
+      <description>&lt;p data-vmark="c9ad"&gt;IT之家 10 月 1 日消息，微软公司昨日（9 月 30 日）发布博文，面向 Dev 频道的 Windows Insider 项目成员，发布了适用于 Windows 11 系统的 KB5043168 更新，&lt;strong&gt;用户安装后版本号升至 Build 26120.1912。&lt;/strong&gt;&lt;/p&gt;&lt;h2 data-vmark="615d"&gt;一、优化和改进（正逐步邀请 Dev 频道用户测试）&lt;/h2&gt;&lt;h3 data-vmark="37cd"&gt;1.1、常规&lt;/h3&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="03be"&gt;本次预览版更新包含一小部分常规改进和修复，提高了运行体验。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-vmark="af59"&gt;1.2、Mobile Hotspot&lt;/h3&gt;&lt;ul class="small-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="f9eb"&gt;Windows Mobile Hotspot 现增强支持 6 GHz 连接。IT之家注：新的频段需要支持该功能的芯片和更新的驱动程序，且并非所有支持 6 GHz Wi-Fi 的芯片都支持 6 GHz 移动热点。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p style="text-align: center;" data-vmark="c0c7"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/5d944e8f-55db-401e-8b17-d0d251d5ee4e.jpg?x-bce-process=image/format,f_auto" w="780" h="879" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;h2 data-vmark="26a2"&gt;二、其它修复&lt;/h2&gt;&lt;h3 data-vmark="f1bf"&gt;2.1、开源软件&lt;/h3&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="f0b9"&gt;此更新为 Rust OSS 组件的 txt 文件添加了归属说明。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-vmark="df1b"&gt;2.2、任务管理器&lt;/h3&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="6e11"&gt;避免设置页面出现大片白色背景&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="17e9"&gt;修复高对比度主题切换到普通主题后卡死的问题。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-vmark="50e0"&gt;2.3、输入法&lt;/h3&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="22f1"&gt;组合框获得输入焦点后，关闭该窗口可能会导致内存泄漏。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-vmark="aeed"&gt;2.4、WebView2 应用&lt;/h3&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="b75a"&gt;修复无法检测到来自 Xbox 360 和蓝牙控制器的输入。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <link>https://www.ithome.com/0/799/754.htm</link>
+      <guid>https://www.ithome.com/0/799/754.htm</guid>
+      <pubDate>Tue, 01 Oct 2024 03:38:08 GMT</pubDate>
+    </item>
+    <item>
+      <title>微软发布 Win11 24H2 26100.1882 更新：账号管理器新增注销选项</title>
+      <description>&lt;p data-vmark="6c90"&gt;IT之家 10 月 1 日消息，微软公司昨日（9 月 30 日）发布新闻稿，面向 Windows 11 24H2 设备推送了 KB5043178 更新，用户安装后版本号升至 Build 26100.1882。&lt;/p&gt;&lt;p data-vmark="0e05"&gt;IT之家附上本次更新内容如下：&lt;/p&gt;&lt;h2 data-vmark="8e36"&gt;更新和调整（逐步邀请 Release Preview 频道用户测试）&lt;/h2&gt;&lt;h3 data-vmark="1f5c"&gt;[开始菜单]&lt;/h3&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="5c19"&gt;&lt;strong&gt;新增功能：&lt;/strong&gt;用户点击开始菜单之后，账号管理器会出现注销选项。用户要切换到其他用户，请选择省略号（...）。此时会出现其他用户列表，方便切换。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-vmark="9953"&gt;[任务栏]&lt;/h3&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="eb7e"&gt;&lt;strong&gt;新增功能：&lt;/strong&gt;用户可以直接从任务栏搜索框中显示的搜索结果中共享本地文件。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-vmark="c1e6"&gt;[设置]&lt;/h3&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="cab1"&gt;&lt;strong&gt;新增功能：&lt;/strong&gt;Delivery Optimization 设置页面匹配 Windows 11 设计。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="995f"&gt;&lt;strong&gt;新增功能：&lt;/strong&gt;新的节能建议是关闭高动态范围（HDR）。这有助于使用 HDR 显示屏的设备节约能源。转到设置 &amp;gt; 电源和电池 &amp;gt; 能源建议。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-vmark="8ad1"&gt;[锁屏]&lt;/h3&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="e365"&gt;新增功能 / 特性：在媒体正在播放时，媒体控制按钮现在会显示在锁屏下方的中心位置。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-vmark="4a81"&gt;[续航]&lt;/h3&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="fe67"&gt;新功能：当设备电池电量即将耗尽时，会弹出一个窗口，要求您插入设备电源。当电池电量达到 20% 且节能模式设置为“始终开启”时，就会出现这种情况。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h2 data-vmark="2560"&gt;常规修复&lt;/h2&gt;&lt;h3 data-vmark="3a33"&gt;[开源软件]&amp;nbsp;&lt;/h3&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="ed8f"&gt;此更新为 Rust 开放源码软件组件的 &lt;span class="link-text-start-with-http"&gt;credits.txt&lt;/span&gt; 文件添加了属性。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-vmark="bbb7"&gt;[输入法编辑器 (IME)]&lt;/h3&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="ea13"&gt;当组合框具有输入焦点时，关闭该窗口时可能会发生内存泄漏。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-vmark="5769"&gt;[WebView2 应用程序]&lt;/h3&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="b0d3"&gt;它们无法检测到来自 Xbox 360 和蓝牙控制器的输入。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <link>https://www.ithome.com/0/799/753.htm</link>
+      <guid>https://www.ithome.com/0/799/753.htm</guid>
+      <pubDate>Tue, 01 Oct 2024 03:28:51 GMT</pubDate>
+    </item>
+    <item>
+      <title>吉利新车申报图公布：基于 ICON 打造，自带越野套件</title>
+      <description>&lt;p data-vmark="0d99"&gt;IT之家 10 月 1 日消息，吉利汽车发布了其全新 SUV 车型的申报图，这款新车基于 ICON 车型进行开发，并配备了越野套件。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="14a5"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/e19262a9-460c-4a02-915c-9d691dfcd5b3.jpg?x-bce-process=image/format,f_auto" w="1027" h="770" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="8c02"&gt;新车整体采用黑色涂装，前格栅、车身包围和发动机舱盖等部位均进行了全新设计，尤其是发动机舱盖上新增的两个把手，彰显独特个性。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="0768"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/cadc1d4f-7802-4ad3-91fb-1b5017f21acf.jpg?x-bce-process=image/format,f_auto" w="1026" h="770" data-weibo="1" class="no-alt-img"&gt;&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="b3ca"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/b67a50b1-ee89-4a49-b6ef-ad4c7883ddd5.jpg?x-bce-process=image/format,f_auto" w="1026" h="770" data-weibo="2" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="91d8"&gt;该车的车身尺寸为 4442×1860×1770 毫米，轴距预计与 ICON 车型相同，为 2640 毫米。侧面配备了黑色轮圈，提供 16、17 和 18 英寸三种规格选择。根据工信部的信息，新车继续搭载 1.5T 发动机，参考 ICON 车型，其最大功率为 181 马力，峰值扭矩为 290 牛・米。目前，官方尚未公布更多详细信息，IT之家将持续关注。&lt;/p&gt;</description>
+      <link>https://www.ithome.com/0/799/752.htm</link>
+      <guid>https://www.ithome.com/0/799/752.htm</guid>
+      <pubDate>Tue, 01 Oct 2024 03:28:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>《如龙》真人电视剧首支预告放出：10 月 24 日开播，再现游戏世界的光与影</title>
+      <description>&lt;p data-vmark="9a15"&gt;IT之家 10 月 1 日消息，游戏媒体 eurogamer 昨日（9 月 30 日）发布博文，&lt;strong&gt;报道称亚马逊放出了真人电视剧《如龙》（Like A Dragon:Yakuza）的首支预告，将于 10 月 24 日在 Prime Video 开播。&lt;/strong&gt;&lt;/p&gt;&lt;p data-vmark="874a"&gt;报道称该真人电视剧涵盖 1995 年和 2005 两个时间段，描述了主角桐生一马的生活，他是一位“可怕而无与伦比的战士，拥有强烈的正义感、责任感和人性”。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="670f"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/3e8408c0-8577-4d6d-afe4-8fc8a99139aa.jpg?x-bce-process=image/format,f_auto" w="690" h="388" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="c104"&gt;亚马逊在电视剧描述中写道：&lt;/p&gt;&lt;blockquote&gt;&lt;p data-vmark="287c"&gt;桐生一马因因一场牵涉到为导师顶罪的谋杀事件，于 1995 年被迫入狱十年，出狱后，他发现自己卷入了更复杂的阴谋之中。&lt;/p&gt;&lt;p data-vmark="bed5"&gt;剧情中还涉及到桐生与一个名叫遥的少女之间的关系。遥手中握有一笔失踪的一百亿元的关键线索，因而成为各方势力争夺的对象。桐生为了保护遥，与各种敌人展开斗争。&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-vmark="3ec0"&gt;电视剧采用六集的结构，紧凑地呈现了桐生的成长与蜕变。每一集都将重点放在他如何面对过去的阴影以及与新敌人斗争的过程中。IT之家附上预告如下：&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="f628"&gt;&lt;iframe class="ithome_video bilibili" src="https://player.bilibili.com/player.html?bvid=bv1wmxaeHEys&amp;amp;autoplay=0&amp;amp;page=1" frameborder="no" width="100%" allowfullscreen="true"&gt; &lt;/iframe&gt;&lt;/p&gt;</description>
+      <link>https://www.ithome.com/0/799/751.htm</link>
+      <guid>https://www.ithome.com/0/799/751.htm</guid>
+      <pubDate>Tue, 01 Oct 2024 03:21:30 GMT</pubDate>
+    </item>
+    <item>
+      <title>《死亡搁浅 2》完成度不到一半，小岛秀夫有信心明年发售</title>
+      <description>&lt;p data-vmark="024c"&gt;IT之家 10 月 1 日消息，在 2024 年东京电玩展上，小岛秀夫携多位明星共同参与了《死亡搁浅 2》的直播活动。活动中不仅展示了部分游戏功能和演出内容，小岛还透露《死亡搁浅 2》的开放世界目前完成度仅为 30%-40%。尽管如此，他表示有信心明年发售。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="9d9d"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/4b0461e3-a9a6-4317-9b49-d2a937f5fbc8.jpg?x-bce-process=image/format,f_auto" w="550" h="364" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="b209"&gt;小岛表示，《死亡搁浅 2》计划在 2025 年发售，&lt;strong&gt;并且已经有了内部的发售日期&lt;/strong&gt;。为提防“不可预见的情况”，他表示暂时无法公开具体日期，&lt;strong&gt;只是强调将在 2025 年公布。&lt;/strong&gt;&lt;/p&gt;&lt;p data-vmark="f045"&gt;据IT之家了解，目前小岛秀夫正在同时开发三个项目：《死亡搁浅 2》、《OD》以及一个与索尼合作的未公开名称的潜行游戏。&lt;/p&gt;</description>
+      <link>https://www.ithome.com/0/799/750.htm</link>
+      <guid>https://www.ithome.com/0/799/750.htm</guid>
+      <pubDate>Tue, 01 Oct 2024 03:14:46 GMT</pubDate>
+    </item>
+    <item>
+      <title>岚图汽车 9 月交付新车 10001 辆：同比增长 99.62%，平均售价 33.6 万元</title>
+      <description>&lt;p data-vmark="c61c"&gt;IT之家 10 月 1 日消息，岚图汽车公布 9 月销量，9 月交付新车 10001 辆，同比增长 99.62%，平均售价 33.6 万元，月销五连涨。&lt;/p&gt;&lt;p data-vmark="143a" style="text-align: center;"&gt;&lt;img src="https://qimg.ithome.com/newfiles/2024/10/1b00dbb9-20df-4d1b-8c23-5e93c677537d.png?x-bce-process=image/format,f_auto" w="1024" h="1876" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="5f3e"&gt;此外，全新岚图梦想家上市 12 天，交付突破 5000 辆。岚图知音 10 月 13 日即将上市。&lt;/p&gt;&lt;p&gt;IT之家汇总已公布的 2024 年 9 月汽车销售 / 交付数据如下：&lt;/p&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p&gt;理想汽车：9 月交付新车 53,709 辆，同比增长 48.9%&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;零跑汽车：9 月交付新车 33,767 辆，同比增长 113.7%&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;极氪汽车：9 月交付新车 21,333 辆，同比增长 77%&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;岚图汽车：9 月交付新车 10,001 辆，同比增长&amp;nbsp;99.62%&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <link>https://www.ithome.com/0/799/749.htm</link>
+      <guid>https://www.ithome.com/0/799/749.htm</guid>
+      <pubDate>Tue, 01 Oct 2024 03:02:17 GMT</pubDate>
+    </item>
+    <item>
+      <title>索尼押注 PlayStation 在线游戏，消息称 Guerrilla 正开发《地平线 Online》</title>
+      <description>&lt;p data-vmark="5a0f"&gt;IT之家 10 月 1 日消息，游戏媒体 gamespot 昨日（9 月 30 日）发布博文，报道称工作室 Guerrilla Games 的下一个项目并非单机游戏，&lt;strong&gt;而是《地平线 Online》在线游戏。&lt;/strong&gt;&lt;/p&gt;&lt;p data-vmark="7086"&gt;彭博社的 Jason Schreier 做客 Spawn Wave 播客节目，他表示：“《地平线 Online》（Horizon Online）是 [Guerrilla] 的下一个项目，而不是第三代单机游戏，所以续作还需要更多的时间”。&lt;/p&gt;&lt;p data-vmark="1f27" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/c43575d4-9db2-436b-89cf-a539acfd57f4.jpg?x-bce-process=image/format,f_auto" w="1024" h="576" data-weibo="0"&gt;&lt;/p&gt;&lt;p data-vmark="1f04"&gt;IT之家援引消息源报道，Schreier 还透露索尼非常看重 PlayStation 的在线游戏业务，在经历了《星鸣特攻》失败的项目之后，《地平线 Online》是为数不多的几个还没有被取消的项目。&lt;/p&gt;&lt;p data-vmark="89e1"&gt;Guerrilla Games 是知名的游戏开发公司，以其开放世界的《地平线：零之曙光》游戏而闻名，地平线 Online 将是该系列的扩展，专注于在线多人游戏体验。&lt;/p&gt;&lt;p data-vmark="f9de"&gt;Guerrilla Games 目前的重点是《地平线 Online》，而第三款单人游戏的开发进展较慢，可能还需要一段时间才能推出。&lt;/p&gt;</description>
+      <link>https://www.ithome.com/0/799/747.htm</link>
+      <guid>https://www.ithome.com/0/799/747.htm</guid>
+      <pubDate>Tue, 01 Oct 2024 02:59:08 GMT</pubDate>
+    </item>
+    <item>
+      <title>日本机构：128GB 版苹果 iPhone 16 中国售价全球最低</title>
+      <description>&lt;p data-vmark="c967"&gt;IT之家 10 月 1 日消息，日本民间调查公司 MM 综研发布了一项调查结果，显示苹果 128GB 的 iPhone 16 在 39 个国家和地区的直销价格中，中国的售价最低，而日本排名第三。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="423c"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/6d1cbf71-14c7-42d6-8ab5-e577cd628b2c.jpg?x-bce-process=image/format,f_auto" w="470" h="455" data-weibo="0"  class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="8dab"&gt;具体来说，MM 综研对 iPhone 16 系列的四款机型进行了价格对比，并将其按最新汇率换算成日元。以价格最低的 iPhone 16（128GB）为例，全球均价为 14 万 7026 日元（约合人民币 7219 元），&lt;strong&gt;而中国官网价格为人民币 5999 元起，比均价低了 1200 + 元&lt;/strong&gt;。日本国内售价为 12 万 4800 日元（约合人民币 6128 元），比全球均价低约 2 万 2000 日元。日本的价格在全球排名第三，仅次于泰国和中国。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="f9c5"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/b5e0a309-7823-4c33-9de5-05507b16a551.png?x-bce-process=image/format,f_auto" w="580" h="314" data-weibo="1" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="e003"&gt;IT之家注意到，iPhone 16 Plus 256GB 在日本的售价为 15 万 4800 日元（约合人民币 7601 元），为全球第二低，而在中国官网价格为 7999 元。&lt;/p&gt;&lt;p data-vmark="7bc4"&gt;iPhone 16 Pro 512GB 和最贵的 iPhone 16 Pro Max 1TB 在日本的售价分别为 20 万 4800 日元（约合人民币 10056 元）和 24 万 9800 日元（约合人民币 12265 元），均为全球第三低，在中国则分别为 10999 元和 13999 元。&lt;/p&gt;&lt;p data-vmark="512f"&gt;总体来看，&lt;strong&gt;这四款机型在日本的价格平均比全球均价便宜约 3.5 万日元（约合人民币 1719 元）&lt;/strong&gt;。与上一代 iPhone 15 系列相比，iPhone 16 系列在日本的价格并未成为全球最低，与全球均价的差距也缩小了近 8000 日元。尽管 iPhone 新机型的最低价格已连续四年上涨，但由于日元贬值，日本的 iPhone 在全球范围内仍相对便宜。苹果公司在日本国内对 iPhone 16 系列的价格维持不变。&lt;/p&gt;&lt;p data-vmark="cb4a"&gt;该机构的分析还指出，“越是 iPhone 市场份额高的国家，iPhone 的价格在平均工资中的占比往往越低”。&lt;/p&gt;&lt;p data-vmark="1ef8"&gt;今年，苹果公司最新推出的 iPhone 16 系列在中国市场的热度有所下降，部分电商平台甚至在发售时提供了高达千元的折扣优惠。&lt;/p&gt;</description>
+      <link>https://www.ithome.com/0/799/746.htm</link>
+      <guid>https://www.ithome.com/0/799/746.htm</guid>
+      <pubDate>Tue, 01 Oct 2024 02:50:38 GMT</pubDate>
+    </item>
+    <item>
+      <title>极氪 9 月交付新车 21333 辆，同比增长 77%</title>
+      <description>&lt;p data-vmark="f9be"&gt;IT之家 10 月 1 日消息，极氪汽车宣布，9 月交付 21333 辆再创历史新高，同比增长 77%，环比增长 18%；1-9 月共交付 142873 辆，同比大增 81%。极氪累计交付近 34 万台。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="30bc"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/a31d4afe-2c47-4cae-85cb-a90e351e03ad.jpg?x-bce-process=image/format,f_auto" w="1081" h="1920" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="f919"&gt;据悉，该品牌全新车型 —— 极氪 MIX 将于本月正式上市。&lt;/p&gt;&lt;p&gt;IT之家汇总已公布的 2024 年 9 月汽车销售 / 交付数据如下：&lt;/p&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p&gt;理想汽车：9 月交付新车 53,709 辆，同比增长 48.9%&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;零跑汽车：9 月交付新车 33,767 辆，同比增长 113.7%&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;极氪汽车：9 月交付新车 21,333 辆，同比增长 77%&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;岚图汽车：9 月交付新车 10,001 辆，同比增长&amp;nbsp;99.62%&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <link>https://www.ithome.com/0/799/745.htm</link>
+      <guid>https://www.ithome.com/0/799/745.htm</guid>
+      <pubDate>Tue, 01 Oct 2024 02:47:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>新矿物 +1，我国首次发现含钒量最高的“中村钒铜矿”</title>
+      <description>&lt;p data-vmark="e3c8"&gt;IT之家 10 月 1 日消息，中国地质大学于 9 月 18 日发布博文，报道称该校团队在黑色页岩中首次发现含钒量最高的新矿物“Berndlehmannite”，&lt;strong&gt;中文名为“中村钒铜矿”，矿物缩写为 Blm&lt;/strong&gt;，获得国际矿物学协会-新矿物命名及分类委员会（IMA-CNMNC）批准通过，批准号 IMA 2024-005。&lt;/p&gt;&lt;h3 data-vmark="2fc5"&gt;项目团队介绍&lt;/h3&gt;&lt;p data-vmark="6f42"&gt;该项目由中国地质大学徐林刚副教授团队、李国武教授团队带领，博士研究生付雪瑞在陕西省商洛市山阳县的中村钒矿发现中村钒铜矿。&lt;/p&gt;&lt;p data-vmark="58c8"&gt;新矿物发现者为：付雪瑞，李国武，徐林刚，薛源，孙宁岳，郝金华，简伟，闫浩，叶会寿，丁建华，袁彭。&lt;/p&gt;&lt;h3 data-vmark="29bf"&gt;中村钒铜矿简介&lt;/h3&gt;&lt;p data-vmark="cb4d"&gt;IT之家从报道中获悉，中村钒铜矿为黑色不透明矿物，具金属光泽，在反射光下呈淡奶油色，该矿物以 20 到 120μm 不等的单个矿物颗粒的形式赋存于富钒黑色页岩中。&lt;/p&gt;&lt;p data-vmark="1231"&gt;中村钒铜矿莫氏硬度为 3 又 1/2，具有脆性和“111 矿”完全解理，属于立方晶系，空间群为 Fd-3m。&lt;/p&gt;&lt;p data-vmark="9a19"&gt;该矿石属于硫尖晶石族（Thiospinel Group）中的硫钴铜矿亚族（Carrollite Subgroup）中的一员，其理想晶体化学式：Cu (CrV) S4。主要共生矿物为黄铁矿、闪锌矿和钒云母等。&lt;/p&gt;&lt;p data-vmark="e028" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/7c048117-1764-4d0e-82dd-aba92d3ec772.jpg?x-bce-process=image/format,f_auto" w="1024" h="943" data-weibo="0"&gt;&lt;/p&gt;&lt;figcaption&gt;中村钒铜矿镜下特征&lt;/figcaption&gt;&lt;p data-vmark="efc2"&gt;中村钒铜矿以德国克劳斯塔尔工业大学的 Bernd Lehmann 教授（1950-）的名字命名，以表彰他对我国华南地区黑色页岩相关矿产研究的重要贡献。&lt;/p&gt;&lt;p data-vmark="7db6"&gt;中村钒铜矿是在我国富钒黑色页岩中首次发现的，以独立矿物的形式存在的新的含钒硫化物，其中 V 平均含量为 17wt%，是目前已知的黑色页岩容矿的钒矿床中含 V 量最高的矿物。&lt;/p&gt;&lt;p data-vmark="f83e" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/33827e7d-17c0-43b6-b650-a9028203ec19.jpg?x-bce-process=image/format,f_auto" w="1024" h="684" data-weibo="1"&gt;&lt;/p&gt;&lt;figcaption&gt;中村钒铜矿晶体模型&lt;/figcaption&gt;&lt;p data-vmark="cf7b"&gt;该矿物的发现对今后黑色页岩中钒的超常富集机制研究以及黑色页岩型钒矿石的选冶具有重要的理论和实践意义。&lt;/p&gt;</description>
+      <link>https://www.ithome.com/0/799/744.htm</link>
+      <guid>https://www.ithome.com/0/799/744.htm</guid>
+      <pubDate>Tue, 01 Oct 2024 02:45:53 GMT</pubDate>
+    </item>
+    <item>
+      <title>特斯拉：今日起 Model S / 3 / X / Y 新车订单可购买“高级车载娱乐服务 1 年包”，售价 118 元 / 年</title>
+      <description>&lt;p data-vmark="bbf7"&gt;IT之家 10 月 1 日消息，特斯拉公司官方最新公告，宣布自今天（2024 年 10 月 1 日）开始，所有 &lt;strong&gt;Model S、Model 3、Model X 和 Model Y&lt;/strong&gt; 新车订单均可在车辆交付前购买“高级车载娱乐服务 1 年包”，售价为 &lt;strong&gt;118 元 / 年&lt;/strong&gt;。&lt;/p&gt;&lt;p data-vmark="6112"&gt;IT之家注：&lt;strong&gt;仅限车辆交付前购买，认证二手车订单不适用。&lt;/strong&gt;&lt;/p&gt;&lt;h3 data-vmark="6705"&gt;高级车载娱乐服务包价格&lt;/h3&gt;&lt;p data-vmark="2dc2"&gt;车辆交付前，联系 Tesla 销售或交付顾问购买「高级车载娱乐服务」1 年包，&lt;strong&gt;价格为 ¥118 / 年&lt;/strong&gt;，有效期为 1 年，一次性支付。&lt;/p&gt;&lt;p data-vmark="5f66"&gt;1 年包到期后，可通过 Tesla 应用程序订阅「高级车载娱乐服务」月包，&lt;strong&gt;价格为 ¥9.99 / 月&lt;/strong&gt;，有效期为 1 个月，到期后自动续订并扣费。&lt;/p&gt;&lt;p data-vmark="dcb0"&gt;无论是否购买高级车载娱乐服务 1 年包，均可在车辆交付后订阅该服务的月包。&lt;/p&gt;&lt;p data-vmark="a759" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/8f9a9f05-84b7-42d9-984e-2e84bfcbe9ff.jpg?x-bce-process=image/format,f_auto" w="742" h="314" data-weibo="0"&gt;&lt;/p&gt;&lt;p data-vmark="dc6c"&gt;高级车载娱乐服务包内容：&lt;/p&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="a976"&gt;车载导航&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="6f06"&gt;可视化实时路况显示&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="1664"&gt;卫星地图&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="b982"&gt;通过车载应用播放网络音乐和视频&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="2e07"&gt;车载 KTV 应用&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="b23f"&gt;线上游戏&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="f01d"&gt;互联网浏览器&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <link>https://www.ithome.com/0/799/743.htm</link>
+      <guid>https://www.ithome.com/0/799/743.htm</guid>
+      <pubDate>Tue, 01 Oct 2024 02:34:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>macOS 原生版 Perplexity 本月 15 日上线：AI 颠覆搜索体验，重塑苹果 Mac 用户知识管理</title>
+      <description>&lt;p data-vmark="3d74"&gt;IT之家 10 月 1 日消息，科技媒体 9to5Mac 昨日（9 月 30 日）发布博文，报道称 Perplexity AI 计划 10 月推出 macOS 原生版 AI 搜索引擎 Perplexity，&lt;strong&gt;并支持用户通过 Mac App Store 下载。&lt;/strong&gt;&lt;/p&gt;&lt;p data-vmark="c16a"&gt;Perplexity 平台成立于 2022 年，它是一款生成式 AI 搜索引擎，通过大语言模型提供更卓越的搜索结果，以提供准确的答案和更好地总结网页内容而脱颖而出。&lt;/p&gt;&lt;p data-vmark="09b9" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/3d361e5b-2275-4ad8-a0c9-4438bd572092.jpg?x-bce-process=image/format,f_auto" w="638" h="602" data-weibo="0"  class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="8b67"&gt;IT之家查询公开信息，Perplexity 目前已以预览版的形式，上架 Mac App Store，感兴趣的用户可以&lt;a href="https://apps.apple.com/us/app/perplexity-ask-anything/id6714467650?mt=12" target="_blank"&gt;访问这里&lt;/a&gt;尝试体验。&lt;/p&gt;&lt;p data-vmark="4398" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/c5e13ced-fda1-4662-9f48-8519b1b8b718.jpg?x-bce-process=image/format,f_auto" w="1024" h="640" data-weibo="1" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="5004"&gt;Perplexity 应用程序将免费提供下载，用户可选择订阅 Perplexity Pro。新的 Mac 应用程序将提供专业搜索（支持语音或文本输入）、Thread 信息流跟进、来源追踪和历史搜索等功能。&lt;/p&gt;</description>
+      <link>https://www.ithome.com/0/799/742.htm</link>
+      <guid>https://www.ithome.com/0/799/742.htm</guid>
+      <pubDate>Tue, 01 Oct 2024 02:21:12 GMT</pubDate>
+    </item>
+    <item>
+      <title>理想汽车 9 月交付新车 53709 辆：同比增长 48.9%，创单月交付量历史新高</title>
+      <description>&lt;p data-vmark="3e31"&gt;IT之家 10 月 1 日消息，理想汽车公布 2024 年 9 月交付数据，9 月交付 53,709 辆，创单月交付量历史新高，同比增长 48.9%。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="2bed"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/3622a52c-fdf4-488a-8a20-ac11a79e3784.jpg?x-bce-process=image/format,f_auto" w="1125" h="2436" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="0865"&gt;2024 年第三季度，理想汽车交付 152,831 辆，同比增长 45.4%。截至 2024 年 9 月 30 日，理想汽车 2024 年共交付 341,812 辆，历史累计交付量为 975,176 辆。&lt;/p&gt;&lt;p data-vmark="0476"&gt;理想汽车董事长兼 CEO 李想称，“随着新能源汽车渗透率逐渐超过 50%，品牌头部效应愈发明显。三季度以来，在 20 万元以上新能源汽车市场，TOP3 品牌集中度已经达到 50%，其中理想汽车的市占率超过 17%，位居中国汽车品牌销量首位。理想 L 系列和理想 MEGA 的订单稳定增长，9 月交付量创历史新高，单周首次同时超越豪华品牌奔驰、宝马和奥迪。10 月，我们即将迎来第 100 万辆新车的下线和交付，这是中国新势力车企的首个百万辆里程碑。百万辆不仅是销量数字，更意味随着量的积累，新能源汽车的智能化，特别是智能驾驶技术的发展将迈向全新的阶段。我们高兴地看到，理想汽车的研发投入正在推动技术平权，我们的产品以平均每月一个版本的速度 OTA 升级，理想全新自动驾驶技术架构端到端 + VLM 系统已经开启万人团测试，为越来越多的用户提供更加安全、便利的驾驶体验。感谢每一位用户、员工、合作伙伴在过去九年里的支持和努力，我们将聚焦用户价值，持续为家庭创造幸福。”&lt;/p&gt;&lt;p data-vmark="e893"&gt;据IT之家了解，截至 2024 年 9 月 30 日，理想汽车在全国已有 479 家零售中心，覆盖 145 个城市；售后维修中心及授权钣喷中心 436 家，覆盖 221 个城市。理想汽车在全国已投入使用 894 座理想超充站，拥有 4286 个充电桩。&lt;/p&gt;&lt;p&gt;IT之家汇总已公布的 2024 年 9 月汽车销售 / 交付数据如下：&lt;/p&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p&gt;理想汽车：9 月交付新车 53,709 辆，同比增长 48.9%&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;零跑汽车：9 月交付新车 33,767 辆，同比增长 113.7%&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;极氪汽车：9 月交付新车 21,333 辆，同比增长 77%&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;岚图汽车：9 月交付新车 10,001 辆，同比增长&amp;nbsp;99.62%&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <link>https://www.ithome.com/0/799/741.htm</link>
+      <guid>https://www.ithome.com/0/799/741.htm</guid>
+      <pubDate>Tue, 01 Oct 2024 02:20:05 GMT</pubDate>
+    </item>
+    <item>
+      <title>曝比亚迪突然向员工发放利润奖：有人到手 10 多万元</title>
+      <description>&lt;p data-vmark="e45c"&gt;IT之家 10 月 1 日消息，近期有财经博主援引网友爆料称，比亚迪在未提前通知员工的情况下，突然发放了利润奖金，有人获得了七八万元，有人则拿到了十多万元。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="5554"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/2a1d1d97-dcd8-405b-bd28-1a1469c1eb42.jpg?x-bce-process=image/format,f_auto" w="927" h="537" data-weibo="0" data-marks="1931fd9d012eb6d1d7bd18d161c0375c0ccc868a8b901b25dbf6ada56f682c96be95b395fed6f6e4c109cbc00b4d9412" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="8de7"&gt;根据博主 @邹晨辉Finan 发布的截图，一位疑似比亚迪员工的帖子显示，他正为十一假期与女友的出行计划发愁，因为手头拮据，选择有限。没想到 9 月 26 日下午，他的银行卡突然收到一笔 86167.14 元的款项，原来是比亚迪发放的 2024 年利润奖金。据该员工介绍，比亚迪此次发放奖金没有提前通过邮件通知，直接将钱打入账户，显然是想给员工一个惊喜。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="5c78"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/a7fa26eb-8106-4821-aaf0-f73f71e655e8.jpg?x-bce-process=image/format,f_auto" w="1256" h="2228" data-weibo="1" class="no-alt-img"&gt;&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="e725"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/0e64d5b9-1b79-4536-a856-b42c8d615235.jpg?x-bce-process=image/format,f_auto" w="600" h="351" data-weibo="2" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="4bca"&gt;他还询问了身边的同事，发现大家陆续都收到了奖金。其中一位朋友在订购回家高铁票时，突然收到银行公众号的提醒，点进去一看，&lt;strong&gt;发现将近 13 万元的奖金已经到账。&lt;/strong&gt;&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="5e9b"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/1e6468f2-5da5-4904-86b1-892cdab09229.jpg?x-bce-process=image/format,f_auto" w="957" h="1036" data-weibo="3"  class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="ad3a"&gt;对此，有汽车博主在评论区询问这件事的真实性。IT之家从网友评论中了解到，这件事很可能是真的，&lt;strong&gt;但所谓的“2024 利润奖金”似乎并非人人都有份&lt;/strong&gt;。&lt;/p&gt;</description>
+      <link>https://www.ithome.com/0/799/740.htm</link>
+      <guid>https://www.ithome.com/0/799/740.htm</guid>
+      <pubDate>Tue, 01 Oct 2024 02:13:17 GMT</pubDate>
+    </item>
     <item>
       <title>摩托罗拉 Moto G75 手机即将登场：3 种颜色、5000 万主摄、IP68 防水</title>
       <description>&lt;p data-vmark="9d16"&gt;IT之家 10 月 1 日消息，科技媒体 Android Headline 昨日（9 月 30 日）发布博文，报道分享了摩托罗拉 Moto G75 手机的渲染图，&lt;strong&gt;展示了黑色、灰色和蓝色三种颜色。&lt;/strong&gt;&lt;/p&gt;&lt;h3 data-vmark="72f7"&gt;设计&lt;/h3&gt;&lt;p data-vmark="b62d"&gt;与 Moto G85 不同，Moto G75 将采用平面边框设计，并配备相对较窄的边框。前置摄像头采用了居中打孔设计。&lt;/p&gt;&lt;p data-vmark="8a7a"&gt;音量键和电源键（可能兼具指纹传感器功能）位于右侧，而 SIM 卡托盘部分则位于左侧边缘。&lt;/p&gt;&lt;p data-vmark="bbcf"&gt;Moto G75 拥有方正的机身，但考虑到其属于预算级机型，应采用聚碳酸酯材质打造。&lt;/p&gt;&lt;p data-vmark="f843"&gt;手机左上角看到一个大型方形模块，这里容纳了双摄像头传感器和一个 LED 闪光灯。还有标志性的 Moto 标志。模块内刻有 50MP 字样。&lt;/p&gt;&lt;h3 data-vmark="b0c6"&gt;防水&lt;/h3&gt;&lt;p data-vmark="5a63"&gt;Moto G75 手机支持 IP68 级别防水防尘。&lt;/p&gt;&lt;h3 data-vmark="fe27"&gt;屏幕&lt;/h3&gt;&lt;p data-vmark="dcb1"&gt;该机将配备一块 6.8 英寸的高清 FHD + 显示屏，并支持杜比全景声。&lt;/p&gt;&lt;h3 data-vmark="96a6"&gt;摄像头&lt;/h3&gt;&lt;p data-vmark="8eb5"&gt;主摄像头将采用 5000 万像素的索尼 LYT600，并支持 OIS 光学防抖。&lt;/p&gt;&lt;h3 data-vmark="c6d7"&gt;芯片&lt;/h3&gt;&lt;p data-vmark="584d"&gt;芯片组细节尚未公布，预估将搭载高通骁龙 SoC。&lt;/p&gt;&lt;h3 data-vmark="8eda"&gt;颜色&lt;/h3&gt;&lt;p data-vmark="987d"&gt;曝光的渲染图显示该机黑色、灰色和蓝色三种颜色，IT之家在此前的文章中，已经曝光了黑色和蓝色渲染图，而本次新增曝光灰色版本。&lt;/p&gt;&lt;p data-vmark="30bb"&gt;灰色：&lt;/p&gt;&lt;p data-vmark="06a2" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/2f0fd0bd-cd39-4c7d-939e-625992023186.jpg?x-bce-process=image/format,f_auto" w="900" h="900" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="6eae" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/885f810c-7c0c-48a7-9a56-73a99c5a1b2c.jpg?x-bce-process=image/format,f_auto" w="900" h="900" data-weibo="1" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="5266" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/a9a0ee40-bdad-45f6-ae50-87074d40f1b6.jpg?x-bce-process=image/format,f_auto" w="900" h="900" data-weibo="2" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="0854" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/27b548a7-4007-49b3-82a2-5144baf96826.jpg?x-bce-process=image/format,f_auto" w="900" h="900" data-weibo="3" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="69a0"&gt;蓝色：&lt;/p&gt;&lt;p data-vmark="b083" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/ed283335-a0bb-4826-a39e-d57c14dcce57.jpg?x-bce-process=image/format,f_auto" w="900" h="900" data-weibo="4" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="6bc4" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/d013933f-d3d5-4706-8ffd-f51dee0577a6.jpg?x-bce-process=image/format,f_auto" w="900" h="900" data-weibo="5" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="48c1" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/b9a92c98-c3bf-44cc-8650-4f73f776acb3.jpg?x-bce-process=image/format,f_auto" w="900" h="900" data-weibo="6" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="6c44" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/1c8d4678-5a1f-4d7e-adc3-0f2112b00b2a.jpg?x-bce-process=image/format,f_auto" w="900" h="900" data-weibo="7" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="596b" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/547c8262-912d-4611-9d01-dc1282bfaaf3.jpg?x-bce-process=image/format,f_auto" w="900" h="900" data-weibo="8" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="1d4e" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/245cbfb3-7ad8-471a-97de-954873b65fa4.jpg?x-bce-process=image/format,f_auto" w="900" h="900" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="f5cd"&gt;黑色：&lt;/p&gt;&lt;p data-vmark="9a06" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/7100b2aa-d794-4868-9c22-36366deda91b.jpg?x-bce-process=image/format,f_auto" w="900" h="900" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="50d7" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/78d28f9b-53de-4a5b-aa4b-4981e0f291d7.jpg?x-bce-process=image/format,f_auto" w="900" h="900" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="31f2" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/55d538be-30c0-4378-851f-a80f5619b287.jpg?x-bce-process=image/format,f_auto" w="900" h="900" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="253b" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/ac482f60-04cb-4f28-90f6-12e1f725f080.jpg?x-bce-process=image/format,f_auto" w="900" h="900" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="c5c7" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/0c30fbb6-0c7d-4939-879d-533e995431e3.jpg?x-bce-process=image/format,f_auto" w="900" h="900" class="no-alt-img"&gt;&lt;/p&gt;</description>
@@ -15,140 +113,7 @@
     </item>
     <item>
       <title>2024 年 10 月科技事件日历一览表</title>
-      <description>&lt;p&gt;IT之家的观众老爷们好，每月一号小泵来给大家做汇报了[嘿哈]。下面是 &lt;span class="font-color-red"&gt;2024 年 10 月&lt;/span&gt;科技事件的预告汇总，请查收！&lt;/p&gt;
-
-    &lt;h2&gt;2024 年 10 月&lt;/h2&gt;
-    &lt;table&gt;
-        &lt;tbody&gt;
-        &lt;tr class="firstRow"&gt;
-            &lt;td&gt;日期&lt;/td&gt;
-            &lt;td&gt;北京时间&lt;/td&gt;
-            &lt;td&gt;地点&lt;/td&gt;
-            &lt;td&gt;事件&lt;/td&gt;
-        &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;10/8&lt;/td&gt;
-                &lt;td&gt;&amp;#x5F85;&amp;#x5B9A;&lt;/td&gt;
-                &lt;td&gt;&amp;#x7EBF;&amp;#x4E0A;&lt;/td&gt;
-                &lt;td&gt;2024 &amp;#x9E3F;&amp;#x6D77;&amp;#x79D1;&amp;#x6280;&amp;#x65E5;&amp;#xFF0C;Model D &amp;#x8F66;&amp;#x578B;&amp;#x4EAE;&amp;#x76F8;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;10/9&lt;/td&gt;
-                &lt;td&gt;10:30&lt;/td&gt;
-                &lt;td&gt;&amp;#x7EBF;&amp;#x4E0A;&lt;/td&gt;
-                &lt;td&gt;&amp;#x8054;&amp;#x53D1;&amp;#x79D1;&amp;#x5929;&amp;#x7391; 9400 &amp;#x53D1;&amp;#x5E03;&amp;#x4F1A;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;10/10&lt;/td&gt;
-                &lt;td&gt;&amp;#x5F85;&amp;#x5B9A;&lt;/td&gt;
-                &lt;td&gt;&amp;#x7EBF;&amp;#x4E0A;&lt;/td&gt;
-                &lt;td&gt;&amp;#x5C0F;&amp;#x9E4F;P7&amp;#x2B;&amp;#x8F66;&amp;#x578B;&amp;#x4EAE;&amp;#x76F8;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;10/10&lt;/td&gt;
-                &lt;td&gt;10:00&lt;/td&gt;
-                &lt;td&gt;&amp;#x6DF1;&amp;#x5733;&amp;#x56FD;&amp;#x9645;&amp;#x4F1A;&amp;#x5C55;&amp;#x4E2D;&amp;#x5FC3;&lt;/td&gt;
-                &lt;td&gt;2024 vivo &amp;#x5F00;&amp;#x53D1;&amp;#x8005;&amp;#x5927;&amp;#x4F1A;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;10/11&lt;/td&gt;
-                &lt;td&gt;&amp;#x5F85;&amp;#x5B9A;&lt;/td&gt;
-                &lt;td&gt;&amp;#x7EBF;&amp;#x4E0A;&lt;/td&gt;
-                &lt;td&gt;&amp;#x7279;&amp;#x65AF;&amp;#x62C9;&amp;#x53D1;&amp;#x5E03; Robotaxi &amp;#x65E0;&amp;#x4EBA;&amp;#x9A7E;&amp;#x9A76;&amp;#x51FA;&amp;#x79DF;&amp;#x8F66;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;10/11&lt;/td&gt;
-                &lt;td&gt;0:00&lt;/td&gt;
-                &lt;td&gt;&amp;#x7EBF;&amp;#x4E0A;&lt;/td&gt;
-                &lt;td&gt;AMD Advancing AI 2024 &amp;#x76F4;&amp;#x64AD;&amp;#x6D3B;&amp;#x52A8;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;10/14&lt;/td&gt;
-                &lt;td&gt;&amp;#x5F85;&amp;#x5B9A;&lt;/td&gt;
-                &lt;td&gt;&amp;#x5317;&amp;#x4EAC;&lt;/td&gt;
-                &lt;td&gt;vivo &amp;#x65B0;&amp;#x54C1;&amp;#x53D1;&amp;#x5E03;&amp;#x4F1A;&amp;#x5B9A;&amp;#x6863;&amp;#xFF0C;X200 &amp;#x7CFB;&amp;#x5217;&amp;#x65D7;&amp;#x8230;&amp;#x624B;&amp;#x673A;&amp;#x5C06;&amp;#x81F3;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;10/14&lt;/td&gt;
-                &lt;td&gt;&amp;#x5F85;&amp;#x5B9A;&lt;/td&gt;
-                &lt;td&gt;&amp;#x7EBF;&amp;#x4E0A;&lt;/td&gt;
-                &lt;td&gt;&amp;#x96F6;&amp;#x8DD1; B10 &amp;#x4EAE;&amp;#x76F8; 2024 &amp;#x5DF4;&amp;#x9ECE;&amp;#x8F66;&amp;#x5C55;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;10/15&lt;/td&gt;
-                &lt;td&gt;&amp;#x5F85;&amp;#x5B9A;&lt;/td&gt;
-                &lt;td&gt;&amp;#x7EBF;&amp;#x4E0A;&lt;/td&gt;
-                &lt;td&gt;&amp;#x6587;&amp;#x8FDC;&amp;#x77E5;&amp;#x884C;&amp;#x65B0;&amp;#x4E00;&amp;#x4EE3; Robotaxi &amp;#x53D1;&amp;#x5E03;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;10/17&lt;/td&gt;
-                &lt;td&gt;&amp;#x5F85;&amp;#x5B9A;&lt;/td&gt;
-                &lt;td&gt;&amp;#x7EBF;&amp;#x4E0A;&lt;/td&gt;
-                &lt;td&gt;Unity 6&amp;#x5F15;&amp;#x64CE;&amp;#x5168;&amp;#x7403;&amp;#x53D1;&amp;#x5E03;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;10/17&lt;/td&gt;
-                &lt;td&gt;10:00&lt;/td&gt;
-                &lt;td&gt;&amp;#x6D59;&amp;#x6C5F;&amp;#x676D;&amp;#x5DDE;&lt;/td&gt;
-                &lt;td&gt;2024 OPPO &amp;#x5F00;&amp;#x53D1;&amp;#x8005;&amp;#x5927;&amp;#x4F1A;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;10/21&lt;/td&gt;
-                &lt;td&gt;&amp;#x5F85;&amp;#x5B9A;&lt;/td&gt;
-                &lt;td&gt;&amp;#x7EBF;&amp;#x4E0A;&lt;/td&gt;
-                &lt;td&gt;&amp;#x9A81;&amp;#x9F99;&amp;#x5CF0;&amp;#x4F1A; 2024&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;10/25&lt;/td&gt;
-                &lt;td&gt;0:00&lt;/td&gt;
-                &lt;td&gt;&amp;#x9152;&amp;#x6CC9;&lt;/td&gt;
-                &lt;td&gt;&amp;#x795E;&amp;#x821F;&amp;#x5341;&amp;#x4E5D;&amp;#x53F7;&amp;#x8F7D;&amp;#x4EBA;&amp;#x98DE;&amp;#x8239;&amp;#x53D1;&amp;#x5C04;&amp;#xFF08;&amp;#x9884;&amp;#x6D4B;&amp;#xFF09;&lt;/td&gt;
-            &lt;/tr&gt;
-        &lt;/tbody&gt;
-    &lt;/table&gt;
-
-    &lt;h2&gt;2024 年 11 月&lt;/h2&gt;
-    &lt;table&gt;
-        &lt;tbody&gt;
-        &lt;tr class="firstRow"&gt;
-            &lt;td&gt;日期&lt;/td&gt;
-            &lt;td&gt;北京时间&lt;/td&gt;
-            &lt;td&gt;地点&lt;/td&gt;
-            &lt;td&gt;事件&lt;/td&gt;
-        &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;11/12&lt;/td&gt;
-                &lt;td&gt;0:00&lt;/td&gt;
-                &lt;td&gt;&amp;#x7EBF;&amp;#x4E0A;&lt;/td&gt;
-                &lt;td&gt;2024 &amp;#x5E74;&amp;#x7B2C;&amp;#x5341;&amp;#x4E94;&amp;#x5C4A;&amp;#x73E0;&amp;#x6D77;&amp;#x822A;&amp;#x5C55;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;11/12&lt;/td&gt;
-                &lt;td&gt;&amp;#x5F85;&amp;#x5B9A;&lt;/td&gt;
-                &lt;td&gt;&amp;#x4E0A;&amp;#x6D77;&lt;/td&gt;
-                &lt;td&gt;2024 &amp;#x767E;&amp;#x5EA6;&amp;#x4E16;&amp;#x754C;&amp;#x5927;&amp;#x4F1A;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;11/15&lt;/td&gt;
-                &lt;td&gt;9:00&lt;/td&gt;
-                &lt;td&gt;&amp;#x5E7F;&amp;#x4EA4;&amp;#x4F1A;&amp;#x5C55;&amp;#x9986;&lt;/td&gt;
-                &lt;td&gt;2024&amp;#x5E7F;&amp;#x5DDE;&amp;#x56FD;&amp;#x9645;&amp;#x8F66;&amp;#x5C55;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;11/19&lt;/td&gt;
-                &lt;td&gt;10:00&lt;/td&gt;
-                &lt;td&gt;&amp;#x4E4C;&amp;#x9547;&lt;/td&gt;
-                &lt;td&gt;2024&amp;#x5E74;&amp;#x4E16;&amp;#x754C;&amp;#x4E92;&amp;#x8054;&amp;#x7F51;&amp;#x5927;&amp;#x4F1A;&amp;#x4E4C;&amp;#x9547;&amp;#x5CF0;&amp;#x4F1A;&lt;/td&gt;
-            &lt;/tr&gt;
-        &lt;/tbody&gt;
-    &lt;/table&gt;
-
-&lt;p data-vmark="f852"&gt;
-    [之家]&amp;nbsp;小泵友情提示，很多活动可能在开始前几天才能确定具体时间，所以这个日历会随时更新，大家可以到&lt;span class="font-color-red"&gt;IT之家 App 首页右上角的 + 加号菜单&lt;/span&gt;，点击“&lt;a href="https://img.ithome.com/app/calendar/event_list.html?date=2024-10-01" target="_blank" title="新闻日历" data-androidurl="ithome://calendar?date=2024-10-01&amp;amp;tab=events" data-iosurl="ithome://calendar?date=2024-10-01&amp;amp;tab=events" data-uwpurl="ithome://calendar?date=2024-10-01&amp;amp;tab=events"&gt;新闻日历&lt;/a&gt;”来查看事件标签，还能对感兴趣的事件设置“提醒”哦。
-&lt;/p&gt;
-&lt;p data-vmark="eeaa" style="text-align: center;"&gt;
-    &lt;img src="https://img.ithome.com/newsuploadfiles/2024/4/af32e22f-4545-4758-8703-c22ff5bfcae6.png?x-bce-process=image/format,f_auto" w="756" h="426" class="no-alt-img" data-source-type="1" /&gt;
-&lt;/p&gt;</description>
+      <description>&lt;p data-vmark="89d9"&gt;IT之家的观众老爷们好，每月一号小泵来给大家做汇报了 [嘿哈]。下面是 &lt;span class="font-color-red"&gt;2024 年 10 月&lt;/span&gt;科技事件的预告汇总，请查收！&lt;/p&gt;&lt;h2 data-vmark="4c23"&gt;2024 年 10 月&lt;/h2&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr class="firstRow"&gt;&lt;td&gt;日期&lt;/td&gt;&lt;td&gt;北京时间&lt;/td&gt;&lt;td&gt;地点&lt;/td&gt;&lt;td&gt;事件&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10/8&lt;/td&gt;&lt;td&gt;待定&lt;/td&gt;&lt;td&gt;线上&lt;/td&gt;&lt;td&gt;2024 鸿海科技日，Model D 车型亮相&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10/9&lt;/td&gt;&lt;td&gt;10:30&lt;/td&gt;&lt;td&gt;线上&lt;/td&gt;&lt;td&gt;联发科天玑 9400 发布会&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10/10&lt;/td&gt;&lt;td&gt;待定&lt;/td&gt;&lt;td&gt;线上&lt;/td&gt;&lt;td&gt;小鹏 P7+ 车型亮相&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10/10&lt;/td&gt;&lt;td&gt;10:00&lt;/td&gt;&lt;td&gt;深圳国际会展中心&lt;/td&gt;&lt;td&gt;2024 vivo 开发者大会&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10/11&lt;/td&gt;&lt;td&gt;待定&lt;/td&gt;&lt;td&gt;线上&lt;/td&gt;&lt;td&gt;特斯拉发布 Robotaxi 无人驾驶出租车&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10/11&lt;/td&gt;&lt;td&gt;0:00&lt;/td&gt;&lt;td&gt;线上&lt;/td&gt;&lt;td&gt;AMD Advancing AI 2024 直播活动&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10/14&lt;/td&gt;&lt;td&gt;待定&lt;/td&gt;&lt;td&gt;北京&lt;/td&gt;&lt;td&gt;vivo 新品发布会定档，X200 系列旗舰手机将至&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10/14&lt;/td&gt;&lt;td&gt;待定&lt;/td&gt;&lt;td&gt;线上&lt;/td&gt;&lt;td&gt;零跑 B10 亮相 2024 巴黎车展&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10/15&lt;/td&gt;&lt;td&gt;待定&lt;/td&gt;&lt;td&gt;线上&lt;/td&gt;&lt;td&gt;文远知行新一代 Robotaxi 发布&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10/17&lt;/td&gt;&lt;td&gt;待定&lt;/td&gt;&lt;td&gt;线上&lt;/td&gt;&lt;td&gt;Unity 6 引擎全球发布&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10/17&lt;/td&gt;&lt;td&gt;10:00&lt;/td&gt;&lt;td&gt;浙江杭州&lt;/td&gt;&lt;td&gt;2024 OPPO 开发者大会&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10/21&lt;/td&gt;&lt;td&gt;待定&lt;/td&gt;&lt;td&gt;线上&lt;/td&gt;&lt;td&gt;骁龙峰会 2024&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10/25&lt;/td&gt;&lt;td&gt;0:00&lt;/td&gt;&lt;td&gt;酒泉&lt;/td&gt;&lt;td&gt;神舟十九号载人飞船发射（预测）&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2 data-vmark="caa0"&gt;2024 年 11 月&lt;/h2&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr class="firstRow"&gt;&lt;td&gt;日期&lt;/td&gt;&lt;td&gt;北京时间&lt;/td&gt;&lt;td&gt;地点&lt;/td&gt;&lt;td&gt;事件&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11/12&lt;/td&gt;&lt;td&gt;0:00&lt;/td&gt;&lt;td&gt;线上&lt;/td&gt;&lt;td&gt;2024 年第十五届珠海航展&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11/12&lt;/td&gt;&lt;td&gt;待定&lt;/td&gt;&lt;td&gt;上海&lt;/td&gt;&lt;td&gt;2024 百度世界大会&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11/15&lt;/td&gt;&lt;td&gt;9:00&lt;/td&gt;&lt;td&gt;广交会展馆&lt;/td&gt;&lt;td&gt;2024 广州国际车展&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11/19&lt;/td&gt;&lt;td&gt;10:00&lt;/td&gt;&lt;td&gt;乌镇&lt;/td&gt;&lt;td&gt;2024 年世界互联网大会乌镇峰会&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p data-vmark="f852"&gt;[之家]&amp;nbsp;小泵友情提示，很多活动可能在开始前几天才能确定具体时间，所以这个日历会随时更新，大家可以到&lt;span class="font-color-red"&gt;IT之家 App 首页右上角的 + 加号菜单&lt;/span&gt;，点击“&lt;a href="https://img.ithome.com/app/calendar/event_list.html?date=2024-10-01" target="_blank" title="新闻日历" data-androidurl="ithome://calendar?date=2024-10-01&amp;amp;tab=events" data-iosurl="ithome://calendar?date=2024-10-01&amp;amp;tab=events" data-uwpurl="ithome://calendar?date=2024-10-01&amp;amp;tab=events"&gt;新闻日历&lt;/a&gt;”来查看事件标签，还能对感兴趣的事件设置“提醒”哦。&lt;/p&gt;&lt;p data-vmark="eeaa" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/4/af32e22f-4545-4758-8703-c22ff5bfcae6.png?x-bce-process=image/format,f_auto" w="756" h="426" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;</description>
       <link>https://www.ithome.com/0/799/738.htm</link>
       <guid>https://www.ithome.com/0/799/738.htm</guid>
       <pubDate>Tue, 01 Oct 2024 02:00:05 GMT</pubDate>
@@ -232,7 +197,7 @@
     </item>
     <item>
       <title>高通被曝研制骁龙 X2 秘密武器：剑指苹果 M 系列，能效 + AI 开启芯片新征程</title>
-      <description>&lt;p data-vmark="a0e9"&gt;IT之家 10 月 1 日消息，德国科技媒体 WinFuture 昨日（9 月 30 日）发布博文，&lt;strong&gt;报道称高通公司正在研发新的骁龙 X 系列芯片 SC8480XP，内部代号为 Project Glymur。&lt;/strong&gt;&lt;/p&gt;&lt;p data-vmark="f895"&gt;IT之家援引该媒体报道，在高通公司的规划中，SC8480XP 是下一代高端“骁龙 X2 CPU”，采用 Arm 架构，注重移动性和能效，上市后要和苹果的 M 系列一较高下。&lt;/p&gt;&lt;p data-vmark="be09"&gt;报道称高通自 2024 年 7 月以来一直在测试 SC8480XP，但关于它所具备的功能的信息仍然很少，更多信息预估要等到 2025 年才能解锁曝光。&lt;/p&gt;&lt;p data-vmark="7ff8" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/9e42189b-bbde-47ba-9110-cb4bdcdea6b3.jpg?x-bce-process=image/format,f_auto" w="650" h="366" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;figcaption&gt;图源：高通&amp;nbsp;&lt;/figcaption&gt;&lt;p data-vmark="b6fb"&gt;高通 X 系列芯片的一个重要优势，就是完全兼容微软的 Windows 11 AI+ PC 设备，支持微软的自动超分辨率（Auto SR）技术，利用 AI 提升现有游戏的视频质量和帧率。&lt;/p&gt;&lt;p data-vmark="6b57"&gt;高通的骁龙 X 系列推出后评价不一。客户称赞这些新的 ARM 处理器在功耗效率和人工智能功能方面表现出色；然而，与 AMD 的 Ryzen 和英特尔的 Core X86 芯片相比，这些 CPU 在性能上有所不足，特别是在多核任务方面。&lt;/p&gt;</description>
+      <description>&lt;p data-vmark="a0e9"&gt;IT之家 10 月 1 日消息，德国科技媒体 WinFuture 昨日（9 月 30 日）发布博文，&lt;strong&gt;报道称高通公司正在研发新的骁龙 X 系列芯片 SC8480XP，内部代号为 Project Glymur。&lt;/strong&gt;&lt;/p&gt;&lt;p data-vmark="f895"&gt;IT之家援引该媒体报道，在高通公司的规划中，SC8480XP 是下一代高端“骁龙 X2&amp;nbsp;SoC”，采用 Arm 架构，注重移动性和能效，上市后要和苹果的 M 系列一较高下。&lt;/p&gt;&lt;p data-vmark="be09"&gt;报道称高通自 2024 年 7 月以来一直在测试 SC8480XP，但关于它所具备的功能的信息仍然很少，更多信息预估要等到 2025 年才能解锁曝光。&lt;/p&gt;&lt;p data-vmark="7ff8" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/10/9e42189b-bbde-47ba-9110-cb4bdcdea6b3.jpg?x-bce-process=image/format,f_auto" w="650" h="366" data-weibo="0"&gt;&lt;/p&gt;&lt;figcaption&gt;图源：高通&amp;nbsp;&lt;/figcaption&gt;&lt;p data-vmark="b6fb"&gt;高通 X 系列芯片的一个重要优势，就是完全兼容微软的 Windows 11 AI+ PC 设备，支持微软的自动超分辨率（Auto SR）技术，利用 AI 提升现有游戏的视频质量和帧率。&lt;/p&gt;&lt;p data-vmark="6b57"&gt;高通的骁龙 X 系列推出后评价不一。客户称赞这些新的 ARM 处理器在功耗效率和人工智能功能方面表现出色；然而，与 AMD 的 Ryzen 和英特尔的 Core X86 芯片相比，这些 CPU 在性能上有所不足，特别是在多核任务方面。&lt;/p&gt;</description>
       <link>https://www.ithome.com/0/799/724.htm</link>
       <guid>https://www.ithome.com/0/799/724.htm</guid>
       <pubDate>Tue, 01 Oct 2024 00:21:29 GMT</pubDate>
@@ -432,104 +397,6 @@
       <link>https://www.ithome.com/0/799/692.htm</link>
       <guid>https://www.ithome.com/0/799/692.htm</guid>
       <pubDate>Mon, 30 Sep 2024 13:52:55 GMT</pubDate>
-    </item>
-    <item>
-      <title>2025 款吉利星瑞・东方曜轿车内饰规格公布：标配 14.6 英寸中控、可选 8 扬声器</title>
-      <description>&lt;p data-vmark="cf33"&gt;IT之家 9 月 30 日消息，吉利汽车今天透露旗下 2025 款吉利星瑞・东方曜轿车的内饰信息，&lt;strong&gt;该车将标配后排空调出风口、14.6 英寸中控屏等配置&lt;/strong&gt;，不过官方暂未公布内饰官图。&lt;/p&gt;&lt;p data-vmark="9ed9" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/d5d6121d-9cca-4dc3-83d4-e243ecbc5ef9.png?x-bce-process=image/format,f_auto" w="1106" h="714" data-weibo="0"&gt;&lt;/p&gt;&lt;p data-vmark="35d9"&gt;据介绍，该车将采用 14.6 英寸中控屏及 10.2 英寸液晶仪表，内饰使用黑色主题，配备 6 扬声器音响，拥有抑菌皮质方向盘、打孔皮革座椅及双温区自动空调，主驾座椅支持电动调节。&lt;/p&gt;&lt;p data-vmark="82d3"&gt;此外，该车高配版车型还新增天窗遥控启闭、雨量感应自动雨刷、智能远光灯控制、可开启全景天窗、8 扬声器音响、前排座椅通风 / 加热、后排中央扶手、540 度透明底盘、全速自适应巡航、车道保持辅助和前泊车雷达等配置。&lt;/p&gt;&lt;p data-vmark="bb69"&gt;参考IT之家 9 月 27 日报道，2025 款吉利星瑞・东方曜轿车&lt;a href="https://www.ithome.com/0/798/726.htm" target="_blank"&gt;已开启预售&lt;/a&gt;，将于 10 月 23 日正式上市，预售价区间为 10 万-14 万元。&lt;/p&gt;&lt;p data-vmark="a085" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/4ddd6563-2702-4f1a-a325-42fb10a796e9.png?x-bce-process=image/format,f_auto" w="1124" h="672" data-weibo="1"&gt;&lt;/p&gt;</description>
-      <link>https://www.ithome.com/0/799/690.htm</link>
-      <guid>https://www.ithome.com/0/799/690.htm</guid>
-      <pubDate>Mon, 30 Sep 2024 13:40:07 GMT</pubDate>
-    </item>
-    <item>
-      <title>迪士尼宣布未来 4K 蓝光发行影片将支持杜比视界 HDR，包括《死侍与金刚狼》《异形：夺命舰》</title>
-      <description>&lt;p data-vmark="901d"&gt;IT之家 9 月 30 日消息，据《福布斯》报道，迪士尼未来的 4K 蓝光发行版影片大部分都将采用最新的杜比视界 HDR 格式。&lt;/p&gt;&lt;p data-vmark="ee1f"&gt;迪士尼已宣布《死侍与金刚狼》将于 10 月 22 日发行，《异形：罗慕路斯》12 月 3 日发行，而这两部电影都将支持杜比视界 HDR，这也是自 2018 年上映的《星球大战：最后的绝地武士》以来第一部支持杜比视界的迪士尼发行影片。&lt;/p&gt;&lt;p data-vmark="b98c" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/554686d4-325e-468f-898e-9efb3d3332ed.png?x-bce-process=image/format,f_auto" w="959" h="1146" data-weibo="0"&gt;&lt;/p&gt;&lt;p data-vmark="5a52"&gt;IT之家注意到，迪士尼的蓝光影片此前仅支持&amp;nbsp;HDR10 格式，但已经在 Disney+ 流媒体平台上支持杜比视界。目前还不确定迪士尼这么做的原因，但可能与索尼今年 2 月收购迪士尼的实体媒体制作业务有关。&lt;/p&gt;</description>
-      <link>https://www.ithome.com/0/799/689.htm</link>
-      <guid>https://www.ithome.com/0/799/689.htm</guid>
-      <pubDate>Mon, 30 Sep 2024 13:39:57 GMT</pubDate>
-    </item>
-    <item>
-      <title>阿斯顿・马丁下调今年业绩预期：供应链面临挑战、中国市场疲软</title>
-      <description>&lt;p data-vmark="a33a"&gt;IT之家 9 月 30 日消息，据路透社今晚报道，阿斯顿・马丁警告称，由于&lt;strong&gt;供应链面临挑战&lt;/strong&gt;和&lt;strong&gt;中国市场持续疲软&lt;/strong&gt;，公司年度利润下降，同时下调了今年的产量预期。&lt;/p&gt;&lt;p data-vmark="abee"&gt;作为来自英国的豪华汽车制造商，阿斯顿・马丁与其他欧洲同行一样，也对在中国 —— 这个全球最大汽车市场的艰难环境表示担忧。据悉，阿斯顿・马丁现已停止生产旧款车型，预计从今年下半年开始，新款车型的生产将推动业绩增长和现金流。&lt;/p&gt;&lt;p data-vmark="38fa" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/a8b491c0-e2e2-4f46-9a2e-2011086e7af9.png?x-bce-process=image/format,f_auto" w="900" h="596" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="ebc2"&gt;阿斯顿・马丁新任 CEO 阿德里安・霍尔马克在声明中表示，“要实现公司雄心勃勃的 2024 年计划，需要近乎完美的执行力。然而，我们显然需要采取果断行动，调整 2024 年的产量。”&lt;/p&gt;&lt;p data-vmark="1bf0"&gt;IT之家注：阿德里安・霍尔马克今年 9 月从宾利“跳槽”到阿斯顿・马丁，他肩负着重振公司的命运。&lt;/p&gt;&lt;p data-vmark="19ce"&gt;摩根大通分析师表示，阿斯顿・马丁此次发出的警讯使人们对阿斯顿・马丁未来的雄心壮志、作为独立企业所能实现的目标及基本估值&lt;strong&gt;产生了疑问&lt;/strong&gt;。&lt;/p&gt;&lt;p data-vmark="4b79"&gt;阿斯顿・马丁方面称，公司不再期望在上半年实现正的自由现金流，并将 2024 年的&lt;strong&gt;汽车&lt;/strong&gt;&lt;strong&gt;批发量目标削减了约 1000 辆&lt;/strong&gt;，以解决这一问题。此外，由于几家供应商的业务中断，越来越多的零部件迟迟不能到达，这意味着更多的汽车需要更长的时间才能完成生产，交付时间也被推迟。&lt;/p&gt;</description>
-      <link>https://www.ithome.com/0/799/686.htm</link>
-      <guid>https://www.ithome.com/0/799/686.htm</guid>
-      <pubDate>Mon, 30 Sep 2024 13:28:57 GMT</pubDate>
-    </item>
-    <item>
-      <title>京东工业股份有限公司向港交所提交上市申请书</title>
-      <description>&lt;p data-vmark="ef23"&gt;IT之家 9 月 30 日消息，港交所文件显示，京东工业股份有限公司（IT之家以下简称“京东工业”）今日正式向港交所提交上市申请书。&lt;/p&gt;&lt;p data-vmark="7c41" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/e91ba239-16d8-4c04-b9e4-0413fe513d18.jpg?x-bce-process=image/format,f_auto" w="625" h="363" data-weibo="0" &gt;&lt;/p&gt;&lt;p data-vmark="5961"&gt;京东工业是京东集团旗下专注于工业供应链技术与服务业务的子集团，成立于 2017 年 7 月。&lt;/p&gt;&lt;p data-vmark="b3d7"&gt;上市申请书显示，自 2021 年至 2023 年，京东工业交易额由约 174 亿元增至人民币 261 亿元，复合年增长率为 22.5%；持续经营业务总收入在 2023 年增至 173 亿元，复合年增长率达到 29.4%。&lt;/p&gt;&lt;p data-vmark="88f8" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/a88e3453-2c81-4c81-90b4-3f8ae060f481.png?x-bce-process=image/format,f_auto" w="641" h="899" data-weibo="1"&gt;&lt;/p&gt;&lt;p style="text-align: left;" data-vmark="a3da"&gt;2022 年，京东工业已服务 6900 个重点企业客户和超过 260 万家中小企业，其中重点企业客户包括约 50% 的中国《财富》500 强企业及逾 40% 的在华全球《财富》500 强企业；同时与约 3 万家制造商、分销商及代理商达成合作，平台已提供 48 个产品类别和约 4250 万个 SKU 的产品。&lt;/p&gt;</description>
-      <link>https://www.ithome.com/0/799/685.htm</link>
-      <guid>https://www.ithome.com/0/799/685.htm</guid>
-      <pubDate>Mon, 30 Sep 2024 13:25:32 GMT</pubDate>
-    </item>
-    <item>
-      <title>消息称索尼将推 FE28mm F2.8 全画幅饼干镜头，定价“非常激进”</title>
-      <description>&lt;p data-vmark="382d"&gt;IT之家 9 月 30 日消息，据外媒&amp;nbsp;SonyAlphaRumors&amp;nbsp;报道，有匿名消息源透露索尼即将推出一款 FE28mm F2.8 全画幅饼干镜头，这款镜头配有手动对焦环，光圈档位覆盖&amp;nbsp;F/2.8 - F/22。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="946b"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/f697638e-07a6-4a39-afc7-070ac8c7b72d.png?x-bce-process=image/format,f_auto" w="1408" h="1296" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="5f8d"&gt;IT之家参考外媒报道获悉，该镜头据称“定价将非常激进，将直接与森养&amp;nbsp;RS AF&amp;nbsp;等竞品镜头展开竞争”，作为比较，&lt;strong&gt;最近上市的森养&amp;nbsp;RS AF 镜头国行售&amp;nbsp;2899&amp;nbsp;元&lt;/strong&gt;。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="c2ff"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/d2231280-1eca-48ee-b4a6-33f808c4508f.png?x-bce-process=image/format,f_auto" w="1382" h="1338" data-weibo="1" class="no-alt-img"&gt;&lt;/p&gt;&lt;figcaption&gt;▲ 森养&amp;nbsp;RS AF 镜头&lt;/figcaption&gt;&lt;h3 data-vmark="8d69"&gt;相关阅读：&lt;/h3&gt;&lt;p data-vmark="07b4"&gt;《&lt;a href="https://www.ithome.com/0/798/452.htm" target="_blank"&gt;森养 RS AF“可换镜组”相机镜头套装开售：索尼 E 卡口、21/28/32mm 焦段，2899 元&lt;/a&gt;》&lt;/p&gt;</description>
-      <link>https://www.ithome.com/0/799/684.htm</link>
-      <guid>https://www.ithome.com/0/799/684.htm</guid>
-      <pubDate>Mon, 30 Sep 2024 13:21:14 GMT</pubDate>
-    </item>
-    <item>
-      <title>《乐高：地平线大冒险》PS5 和 Switch 版被曝 59.99 美元，11 月 14 日发售</title>
-      <description>&lt;p data-vmark="68aa"&gt;IT之家 9 月 30 日消息，索尼《乐高：地平线大冒险》将于 11 月 14 日登陆 PlayStation 5、PC 和任天堂 Switch 平台。&lt;/p&gt;&lt;p data-vmark="5519"&gt;@billbil-kun &amp;nbsp;爆料称，《乐高：地平线大冒险》Switch 版和 PS5 版售价 59.99 美元（IT之家备注：当前约 419 元人民币），并公开实体版游戏封面。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="04aa"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/5896d5a9-113a-41fd-9de4-883896fe4856.jpg?x-bce-process=image/format,f_auto" w="1255" h="1975" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;p style="text-align: left;" data-vmark="0522"&gt;这款游戏目前已经上架 Steam，定价等信息暂未公布。&lt;/p&gt;&lt;blockquote&gt;&lt;h2 data-vmark="7ef8"&gt;关于这款游戏&lt;/h2&gt;&lt;p data-vmark="142b"&gt;本游戏将于 2024 年底登陆 PC 平台。&lt;/p&gt;&lt;p data-vmark="f846"&gt;在遥远的未来，大地重回荒芜，钢铁巨兽出没其中。人类回归原始部落，而古老的邪恶势力蠢蠢欲动，妄图摧毁这个世界…&lt;/p&gt;&lt;p data-vmark="fd63"&gt;加入猎人埃洛伊，带领各色英雄，守护地球上的山川草木。这次的大反派名为海利斯，他统领着一群太阳崇拜者，而他们背后的远古之恶则隐于谜团当中。&lt;/p&gt;&lt;p data-vmark="0edf"&gt;独自体验跌宕起伏的冒险故事，或与好友享受单机合作及在线模式，打造纯粹的乐高家园，了解埃洛伊神秘的过去，并由此揭开惊人的秘密。&lt;/p&gt;&lt;/blockquote&gt;</description>
-      <link>https://www.ithome.com/0/799/683.htm</link>
-      <guid>https://www.ithome.com/0/799/683.htm</guid>
-      <pubDate>Mon, 30 Sep 2024 13:13:50 GMT</pubDate>
-    </item>
-    <item>
-      <title>古尔曼称苹果正评估 MR 设备多种方向：维持头显形态或做成智能眼镜 / 耳机</title>
-      <description>&lt;p data-vmark="f18c"&gt;IT之家 9 月 30 日消息，彭博社记者马克・古尔曼在 29 日最新一期“PowerOn”时事通讯中透露，苹果公司“似乎已经意识到”需要重新思考头戴式设备的多种方向，但如何实现&lt;strong&gt;目前尚未达成共识&lt;/strong&gt;。&lt;/p&gt;&lt;p data-vmark="192f"&gt;古尔曼称，苹果公司的视觉产品部门正在评估多种不同的方案。&lt;/p&gt;&lt;ul class=" list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="b76f"&gt;&lt;strong&gt;&amp;nbsp;维持现状：&lt;/strong&gt;大致保持原有 Vision Pro 头显的形态，但重点放在&lt;strong&gt;价格较低的版本&lt;/strong&gt;上。苹果可以用&lt;strong&gt;更便宜的材料、更低的内部技术和更低质量的显示屏&lt;/strong&gt;来降低成本，同时还将推出原版 Vision Pro 的第二代高端版本，配备新的芯片和苹果智能系统。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="7166"&gt;&lt;strong&gt;智能显示屏路线：&lt;/strong&gt; 在这种情况下，苹果将取消 Vision Pro 的板载电脑和外置电池，把许多内部功能&lt;strong&gt;转移到 iPhone 上&lt;/strong&gt;。这将使 iPhone 更具价值，并减轻头显的重量和发热量。最重要的是，该方案可以省去价值数百美元的组件，从而降低价格。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="c838"&gt;&lt;strong&gt;智能眼镜路线：&lt;/strong&gt; 这意味着要开发一种更接近 Meta 与雷朋合作的热门产品 —— 没有 AR 功能的智能眼镜。苹果公司可以利用其在芯片和音频方面的专长，以及不断增加的 AI 工具来制造一款引人注目的设备。这本质上是一个&lt;strong&gt;跟风产品&lt;/strong&gt;，但也类似于增强版的 AirPods，苹果粉丝可能会对此&lt;strong&gt;非常热衷&lt;/strong&gt;。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="6b2d"&gt;&lt;strong&gt;AI 和 AirPods 相结合的路线： &lt;/strong&gt;苹果公司正在研发新版 AirPods Pro，它可以&lt;strong&gt;利用外部摄像头和 AI 来了解外部世界&lt;/strong&gt;，并为用户提供信息。这基本上就是智能眼镜的路线 —— 但没有真正的眼镜。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="6414"&gt;&lt;strong&gt;圣杯之路： &lt;/strong&gt;终极目标是独立的 AR 眼镜，内置&lt;strong&gt;高性能镜片、电池系统、板载计算机、摄像头、眼球跟踪和其他组件&lt;/strong&gt;，同时大小和重量&lt;strong&gt;与普通眼镜无异&lt;/strong&gt;。这一直是蒂姆・库克的梦想，但苹果之前暂停了这一产品的开发，因为这实在是一个太大的挑战。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p data-vmark="8a2b" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/c5b25ace-9919-41f1-8b8e-fc7ddfabf435.png?x-bce-process=image/format,f_auto" w="720" h="448" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="7e3b"&gt;古尔曼表示，苹果最终可能会发布部分或全部这些产品，但需要加快工作进度 —— 并且要迅速。如果不这样做，苹果将面临在一个&lt;strong&gt;可能改变人们使用技术方式&lt;/strong&gt;的产品类别中&lt;strong&gt;失去机会&lt;/strong&gt;的风险。&lt;/p&gt;&lt;p data-vmark="ac77"&gt;据IT之家此前报道，郭明錤曾在 27 日表示，苹果公司的 Vision Pro 2 头显将于 2025 年下半年量产，&lt;strong&gt;关键卖点是结合 Apple Intelligence 和空间计算，硬件方面采用 M5 芯片，运算能力大幅提升。&lt;/strong&gt;&lt;/p&gt;</description>
-      <link>https://www.ithome.com/0/799/682.htm</link>
-      <guid>https://www.ithome.com/0/799/682.htm</guid>
-      <pubDate>Mon, 30 Sep 2024 13:12:29 GMT</pubDate>
-    </item>
-    <item>
-      <title>AITO 问界 M9 已提车车主可获赠智能激光投影系统遥控器</title>
-      <description>&lt;p data-vmark="0e59"&gt;IT之家 9 月 30 日消息，鸿蒙智行问界 M9 上市九个月，累计大定突破 14 万台，稳居国内 50 万豪华车型销量冠军。&lt;/p&gt;&lt;p data-vmark="167b"&gt;为庆祝这一成就，AITO 汽车宣布将于 10 月中旬开始向前期已提车的车主分批赠送智能激光投影系统遥控器，所有问界 M9 Ultra 和已选配激光投影系统的 Max 版车主均可获赠。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="53cc"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/eedbd534-83f2-4b83-95dd-4a631dee5585.jpg?x-bce-process=image/format,f_auto" w="1080" h="2273" data-weibo="0"  class="no-alt-img"&gt;&lt;/p&gt;&lt;p style="text-align: left;" data-vmark="7d66"&gt;IT之家此前报道，今年 3 月，M9 正式开启规模交付，余承东在 9 月 20 日做客央视新闻直播间时表示，搭载华为科技的问界 M9 目前销量已经&lt;a href="https://www.ithome.com/0/797/032.htm" target="_blank"&gt;突破 14 万辆&lt;/a&gt;，并称这是“现象级表现”。&lt;/p&gt;&lt;p data-vmark="5b60"&gt;&lt;strong&gt;相关阅读：&lt;/strong&gt;&lt;/p&gt;&lt;ul class="small-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="43c9"&gt;《&lt;a target="_blank" href="https://www.ithome.com/0/799/500.htm"&gt;鸿蒙智行问界 M9 汽车第 10 万辆交付，大定已突破 14 万辆&lt;/a&gt;》&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <link>https://www.ithome.com/0/799/681.htm</link>
-      <guid>https://www.ithome.com/0/799/681.htm</guid>
-      <pubDate>Mon, 30 Sep 2024 13:04:22 GMT</pubDate>
-    </item>
-    <item>
-      <title>华擎 X870 Pro RS WIFI 主板开售：3 个 M.2 插槽、板载 Wi-Fi 7，2099 元</title>
-      <description>&lt;p data-vmark="7503"&gt;IT之家 9 月 30 日消息，华擎&amp;nbsp;X870 Pro RS WIFI&amp;nbsp;主板现已在京东开售，这款主板支持&amp;nbsp;DDR5 RAM，配备&amp;nbsp;3&amp;nbsp;个&amp;nbsp;M.2 SSD&amp;nbsp;插槽，&lt;strong&gt;同时板载 Wi-Fi 7，售&amp;nbsp;2099&amp;nbsp;元&lt;/strong&gt;。&lt;/p&gt;&lt;p data-vmark="503d" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/04dc2daa-37a9-4992-b32f-d908a974785d.jpg?x-bce-process=image/format,f_auto" w="800" h="800" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="c829"&gt;据介绍，这款主板采用&amp;nbsp;14+2+1&amp;nbsp;相供电设计，支持&amp;nbsp;PCIe Gen5 x16&amp;nbsp;显卡插槽，支持&amp;nbsp;PWM / DC&amp;nbsp;风扇，内置&amp;nbsp;802.11be Wi-Fi 7&amp;nbsp;无线网络技术。&lt;/p&gt;&lt;p data-vmark="64fc" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/4b92b0e4-9e5d-43af-bdeb-d3ea552b04e2.png?x-bce-process=image/format,f_auto" w="746" h="1394" data-weibo="1" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="09af"&gt;该主板采用“M.2 Bottom Heatsink”设计，利用安装于&amp;nbsp;SSD&amp;nbsp;下方的全铝散热片与导热垫结构将热量传导至&amp;nbsp;PCB，号称能够有效解决&amp;nbsp;PCIe Gen5 SSD&amp;nbsp;因高温过热导致的降速问题。&lt;/p&gt;&lt;p data-vmark="a0d0"&gt;接口方面，IT之家注意到这款主板配备&amp;nbsp;USB4&amp;nbsp;接口、USB-C 3.2 Gen 2x2&amp;nbsp;接口、USB-A&amp;nbsp;接口。&lt;/p&gt;&lt;p data-vmark="1d11" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/1733f8aa-b828-4af3-971f-95632772b6d7.jpg?x-bce-process=image/format,f_auto" w="800" h="276" data-weibo="2"  class="no-alt-img"&gt;&lt;/p&gt;&lt;dir&gt;&lt;a contenteditable="false" href="https://u.jd.com/LrGfHZH" target="_blank" data-wapurl="https://u.jd.com/LrGHDIY" data-iosurl="https://u.jd.com/LDGf8gO" data-androidurl="https://u.jd.com/LgGxyNj" data-hosnexturl="https://u.jd.com/LGGolgb" data-hosurl="https://u.jd.com/LG6KOtG" data-uwpurl="https://u.jd.com/LGGXfMb" data-wxmpurl="ithome://openmp?appid=wx91d27dbf599dff74&amp;amp;path=%2fpages%2funion%2fproxy%2fproxy%3fspreadUrl%3dhttps%253a%252f%252fu.jd.com%252fLr6djGW%26EA_PTAG%3d17078.27.380" data-itwxurl="https://u.jd.com/L1GXeus" data-lpwxurl="https://u.jd.com/LrGXEE7"  data-jdid="UpWrSS9oOF0N8I2AHfsdnhs6_309lOAtr4OqWyfa9Za"&gt;&lt;span class="card main-site"&gt;&lt;span class="card-logo"&gt;&lt;img src="https://img14.360buyimg.com/pop/jfs/t1/236349/18/24028/37051/66ed2355F92c0c015/05a3905644886b17.jpg" w="800" h="800"&gt;&lt;/span&gt;&lt;span class="card-info"&gt;&lt;span class="card-title"&gt;&lt;span class="mall-data"&gt;京东&lt;/span&gt;&lt;span class="card-name"&gt;华擎 X870 Pro RS WIFI 主板&lt;/span&gt;&lt;/span&gt;&lt;span class="card-abstract"&gt;&lt;/span&gt;&lt;span class="card-controls"&gt;&lt;span class="price"&gt; 2099 元&lt;/span&gt;&lt;span class="card-btn-deep"&gt;直达链接&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/dir&gt;</description>
-      <link>https://www.ithome.com/0/799/680.htm</link>
-      <guid>https://www.ithome.com/0/799/680.htm</guid>
-      <pubDate>Mon, 30 Sep 2024 13:02:26 GMT</pubDate>
-    </item>
-    <item>
-      <title>团结引擎 1.3.0 版本发布：升级开源鸿蒙 SDK 5.0 及 API 12，继续完善各功能模块</title>
-      <description>&lt;p data-vmark="77ab"&gt;IT之家 9 月 30 日消息，继上次大版本更新后又过了三个月，团结引擎 1.3.0 今日正式发布，涵盖了微信小游戏、团结引擎车机版、OpenHarmony、Audio、MuseChat、代码升级几大方向。&lt;/p&gt;&lt;p data-vmark="c0dc"&gt;对于 OpenHarmony，1.3.0 版本现已升级 OpenHarmony SDK 至 5.0 版，支持使用 API 12 导出工程或直接出包。后续将针对 API 12 中的新功能进行持续迭代升级。&lt;/p&gt;&lt;h3 data-vmark="6529"&gt;继续完善 OpenHarmony 各功能模块&lt;/h3&gt;&lt;p data-vmark="5199"&gt;1.3.0 版本进一步完善了对 OpenHarmony 的各功能模块支持，主要新增了以下支持和优化项：&lt;/p&gt;&lt;ul class="small-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="5894"&gt;支持在 Tuanjie Hub 中下载推荐版本的 &lt;span class="link-text-start-with-http"&gt;Node.js&lt;/span&gt;；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="1119"&gt;支持 PlayerSettings 中配置 &lt;span class="link-text-start-with-http"&gt;module.json5&lt;/span&gt; 的 deviceType、supportWindowMode、signingConfigs、app_id 和 client_id；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="c4f1"&gt;支持自动获取导出工程 &lt;span class="link-text-start-with-http"&gt;build-profile.json5&lt;/span&gt; 中 compatibleSdkVersion 字段；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="6e99"&gt;导出的默认模版工程中，ts 文件替换为 ets，支持开发者引用第三方 ets 库；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="2c81"&gt;支持 &lt;span class="link-text-start-with-http"&gt;Input.backButtonLeavesApp&lt;/span&gt; 接口，支持监听 escape；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="9388"&gt;支持输入框自动获焦；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="ecf6"&gt;支持播放单声道视频声音；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="18fb"&gt;对 SafeArea 的实现进行改进，降低接口的调用开销；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="db12"&gt;优化了 AssetBundle 的构建时间。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-vmark="97e7"&gt;修复问题&lt;/h3&gt;&lt;p data-vmark="b5f4"&gt;1.3.0 版本也修复了开发者反馈的一系列 Bug，主要如下：&lt;/p&gt;&lt;ul class="small-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="3c15"&gt;修复麦克风的相关问题；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="c71f"&gt;修复音 / 视频相关问题，如视频电话打断游戏音频、播放视频无法重播 / 无声 / 卡死等问题；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="db91"&gt;修复分屏情况下或修改分辨率导致的点击错位问题；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="34b1"&gt;修复 Vulkan 模式下横屏显示异常的问题；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="e5e4"&gt;修复 webview 创建之后直接调用 loadurl 接口导致报错的问题；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="7dd3"&gt;修复 Crash Reporting 无法上报子线程的 crash 信息的问题；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="e2a3"&gt;修复多个 worker 线程会冲突的问题；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="11c2"&gt;OpenHarmony Quality Setting 默认值改为 medium；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="059b"&gt;修复 camera 被 disable 时，无法再次手动操作渲染的问题；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="389d"&gt;修改 openurl 路径拼接。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-vmark="f840"&gt;新增开发工具链支持&lt;/h3&gt;&lt;p data-vmark="c9a4"&gt;1.3.0 版本新增两个 Package，逐步完善 OpenHarmony 开发工具链，提升开发体验，可通过 Package Manager 下载安装使用，IT之家汇总具体内容如下：&lt;/p&gt;&lt;p data-vmark="ee88"&gt;&lt;strong&gt;OpenHarmony Hilog (v1.0.0)&lt;/strong&gt;&lt;/p&gt;&lt;p data-vmark="4237"&gt;支持 Tuanjie Editor OpenHarmony 平台连接真机实时查看 log、内存，还原堆栈等，v1.0.0 主要功能包括：&lt;/p&gt;&lt;ul class="small-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="bbc7"&gt;Editor 支持直连 OpenHarmony 真机；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="488c"&gt;支持实时按需显示 / 筛选 log；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="0af1"&gt;支持还原堆栈，帮助快速定位问题；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="7203"&gt;支持显示实时内存占用，支持计算自定义时间间隔内平均消耗；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="73a0"&gt;支持抓取 ArkUI Dump 文件。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p data-vmark="a0c4"&gt;&lt;strong&gt;OpenHarmony SDK Kits（Beta v0.0.1）&lt;/strong&gt;&lt;/p&gt;&lt;p data-vmark="b51c"&gt;帮助 OH 开发者快速接入一系列常用场景 SDK，默认提供 Settings 配置面板，内置 Demo Scene，集成各场景下 SDK 接入的完整 API 调用流程，开箱即用，首个版本已接入 Accout&amp;amp;GameService、IAP、Push，后续将持续迭代，接入更多 Kits。Beta v0.0.1 主要功能包括：&lt;/p&gt;&lt;p data-vmark="9ddb"&gt;1.&amp;nbsp;Settings 面板：&lt;/p&gt;&lt;ul class="small-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="cb7e"&gt;提供接入 SDK Kits 的公共配置项填写，和 Player Settings 保持同步变更；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="7d91"&gt;可勾选一键接入 SDK Kit，支持各 SDK Kit 定制化配置项填写，支持一键打开 Demo Scene，体验接入全流程。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p data-vmark="165b"&gt;2. Demo Scenes：&lt;/p&gt;&lt;ul class="small-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="9583"&gt;Account &amp;amp; GameService Demo 覆盖初始化、登入 / 登出、绑定 / 解绑 Player，验证 Player 信息并上报、Game Performance 初始化及更新等；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="a0f6"&gt;IAP Demo 覆盖验证支付环境、查询各种类商品信息、完整购买流程、完整订阅流程；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="4983"&gt;Push Demo 支持获取 Token，支持模拟发送 Push message 并接收 Push message。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <link>https://www.ithome.com/0/799/679.htm</link>
-      <guid>https://www.ithome.com/0/799/679.htm</guid>
-      <pubDate>Mon, 30 Sep 2024 12:51:09 GMT</pubDate>
-    </item>
-    <item>
-      <title>全球首家 AI 艺术博物馆明年开幕：位于美国洛杉矶，将推广“伦理 AI”</title>
-      <description>&lt;p data-vmark="b721"&gt;IT之家 9 月 30 日消息，据《卫报》25 日报道，传媒艺术家 Refik Anadol 宣布将在美国洛杉矶开设全球首家人工智能艺术博物馆，该馆将突出“&lt;strong&gt;人类想象力与机器创造潜力&lt;/strong&gt;”的交汇点。&lt;/p&gt;&lt;p data-vmark="5936"&gt;该馆被命名为“Dataland”，预计 2025 年底开幕，毗邻当代艺术博物馆、布罗德博物馆和洛杉矶爱乐乐团所在地，将在洛杉矶最负盛名的文化场所中为 AI 艺术创造一个空间。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="32be"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/3eea1439-5f50-4a7c-be2e-65589e48a370.jpg?x-bce-process=image/format,f_auto" w="1440" h="960" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="7baf"&gt;Refik Anadol 承诺，该博物馆将推广“伦理 AI”，使用可再生能源。他和他的艺术家、技术专家团队希望通过 Dataland 重塑 AI 时代的博物馆，同时突出展示数字艺术家的创新作品，并为正在进行的科学和技术研究提供空间。“AI 不是一个工具。&lt;strong&gt;AI 超越了工具&lt;/strong&gt;。字面上说，在人类历史上，我们从未拥有过作为技术的智能。”&lt;/p&gt;&lt;p data-vmark="4973"&gt;Anadol 认为，艺术家&lt;strong&gt;建立自己的 AI 工具&lt;/strong&gt;至关重要，单纯使用别人创建的工具是不够的。该博物馆将重点展示“从道德角度”收集的数据集，例如他的“大型自然模型”（IT之家注：一个开源的生成式 AI 工具，由史密森尼学会、英国自然历史博物馆和其他著名机构共享数据构建）。&lt;/p&gt;&lt;p data-vmark="12c3"&gt;AI 艺术博物馆将以&lt;strong&gt;营利性企业&lt;/strong&gt;的形式启动，不过 Refik Anadol 说，如果自己的项目能够获得赞助人的支持，他愿意向非营利性方向发展。“AI 艺术是一种此前从未被探索的全新艺术形式，现在才刚刚开始。”&lt;/p&gt;</description>
-      <link>https://www.ithome.com/0/799/678.htm</link>
-      <guid>https://www.ithome.com/0/799/678.htm</guid>
-      <pubDate>Mon, 30 Sep 2024 12:49:15 GMT</pubDate>
-    </item>
-    <item>
-      <title>2024 款江汽钇为 3 掀背车新增“挚爱版 330km Air+”车型，8.39 万元</title>
-      <description>&lt;p data-vmark="d0f7"&gt;IT之家 9 月 30 日消息，江汽集团今天为旗下 2024 款钇为 3&amp;nbsp;掀背车新增一款“挚爱版 330km Air+”版本，售&amp;nbsp;8.39&amp;nbsp;万元。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="84ab"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/3/3d6b36f3-0f3f-41ea-8297-3a02ff34492d.jpg?x-bce-process=image/format,f_auto" w="1440" h="809" class="lazy" title="江淮钇为 3 挚爱版 3 月 30 日上市，新增 330km 续航车型" data-weibo="0"&gt;&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="91e1"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/3/14b12aea-f141-46cb-b698-419de04f0158.jpg?x-bce-process=image/format,f_auto" w="1440" h="810" class="lazy" title="江淮钇为 3 挚爱版 3 月 30 日上市，新增 330km 续航车型" data-weibo="1"&gt;&lt;/p&gt;&lt;p data-vmark="b9b3"&gt;据介绍，该车型定位外观方面增加电动隐藏式车门外拉手；同时继承了车型“天使之眼大灯光”前脸、双五辐式轮圈、圆角矩形尾灯组等设计特色。&lt;/p&gt;&lt;p data-vmark="a1c2"&gt;座舱方面，这款新车配备全液晶仪表盘、双辐式多功能方向盘以及悬浮式中控屏，搭载与科大讯飞、华为联合定制的钇为&amp;nbsp;OS&amp;nbsp;系统，支持 360 度全景影像功能。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="8279"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/3/a1e03133-89a0-4d3c-8523-6a1cabba12ec.png?x-bce-process=image/format,f_auto" w="740" h="372" data-weibo="2"&gt;&lt;/p&gt;&lt;p data-vmark="8212"&gt;规格方面，&lt;strong&gt;IT之家获悉该车长宽高分别为&amp;nbsp;4025 x 1770 x 1560&amp;nbsp;毫米，轴距为&amp;nbsp;2620&amp;nbsp;毫米&lt;/strong&gt;，配备 70kW 规格电机，最大扭矩为 135 牛・米。&lt;/p&gt;</description>
-      <link>https://www.ithome.com/0/799/677.htm</link>
-      <guid>https://www.ithome.com/0/799/677.htm</guid>
-      <pubDate>Mon, 30 Sep 2024 12:43:36 GMT</pubDate>
-    </item>
-    <item>
-      <title>哪吒汽车加速在巴西市场布局，批售业务正式拉开帷幕</title>
-      <description>&lt;p data-vmark="a126"&gt;IT之家 9 月 30 日消息，哪吒汽车宣布，随着一批崭新的哪吒汽车从巴西 Escrito Santo 州的港口缓缓驶出货运班车，哪吒汽车在巴西的批售业务没进入正式拉开帷幕。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="f2bc"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/d3c90a38-de48-4dfb-9ba8-4c62f8c14c16.jpg?x-bce-process=image/format,f_auto" w="1440" h="809" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="c2ac"&gt;这批车辆即将抵达遍布巴西各地的哪吒汽车经销商门店。目前，哪吒汽车在巴西市场已开拓超过 30 余家经销门店，广泛覆盖一二三线城市的主要销售区域，预计到 2025 年在巴西门店数量将翻倍。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="f471"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/a52240a7-fe87-4e3f-b677-fc59c670efc4.jpg?x-bce-process=image/format,f_auto" w="1150" h="624" data-weibo="1" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="c53c"&gt;哪吒汽车表示，巴西市场是南美洲最大经济体，公司高度重视，今年初就在巴西圣保罗成立子公司，随后 8 月即迅速上市。&lt;/p&gt;&lt;p data-vmark="ac11"&gt;除此之外，哪吒汽车还积极寻找在当地建立 KD 组装厂的机会，探索本地化生产，在推动当地新能源汽车产业链升级的同时服务于整个南美洲。&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="22f3"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/9a25e194-4fc8-4ed9-9712-8ba558260eba.jpg?x-bce-process=image/format,f_auto" w="1440" h="960" data-weibo="2" class="no-alt-img"&gt;&lt;/p&gt;&lt;p style="text-align: left;" data-vmark="7920"&gt;未来两年内，NETA Auto 计划将全球销售网络扩展到覆盖 50 个国家和地区，并建立 500 个海外销售和服务网点。例如IT之家此前报道过的，哪吒 X 上周刚刚在印尼雅加达正式上市，其本地化生产率达 44%。&lt;/p&gt;&lt;p data-vmark="eedc"&gt;&lt;strong&gt;相关阅读：&lt;/strong&gt;&lt;/p&gt;&lt;ul class="small-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="9cdd"&gt;《&lt;a target="_blank" href="https://www.ithome.com/0/799/027.htm"&gt;哪吒 X 宣布于印尼上市，首批 500 位车主交付&lt;/a&gt;》&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <link>https://www.ithome.com/0/799/676.htm</link>
-      <guid>https://www.ithome.com/0/799/676.htm</guid>
-      <pubDate>Mon, 30 Sep 2024 12:41:02 GMT</pubDate>
-    </item>
-    <item>
-      <title>阿维塔 11/12 上线限时优惠：10 月 31 日前下定可获华为 ADS 高阶包抵扣券 / 双零重力座椅等</title>
-      <description>&lt;p data-vmark="26ae"&gt;IT之家 9 月 30 日消息，IT之家从阿维塔获悉，2024 款阿维塔 11、阿维塔 12 现已开启限时优惠活动，9 月 29 日-10 月 31 日下定可分别获得 10.5 万元和 6.2 万元的权益。&lt;/p&gt;&lt;ul class="medium-size list-paddingleft-2"&gt;&lt;li&gt;&lt;p data-vmark="8456"&gt;&lt;strong&gt;阿维塔 11：&lt;/strong&gt;价值 20000 元的华为 ADS 高阶功能包等额抵扣券、5000 元现金膨胀抵扣 10000 元、6000 元置换补贴；30000 元英国之宝音响套装、20000 元暮紫 / 烟白内饰、15000 元前排双零重力座椅套装、6000 元曜黑车色、3000 元智能香氛系统&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-vmark="9d35"&gt;&lt;strong&gt;阿维塔&lt;/strong&gt;&lt;strong&gt; 12：&lt;/strong&gt;20000 元华为 ADS 高阶功能包等额抵扣券、5000 元现金膨胀抵扣 27000 元；10000 元的 21 英寸运动轮毂 + 前轮 Brembo 全铝四活塞珊瑚红定钳、10000 元的前排双零重力座椅&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p data-vmark="2487" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/d6649bc3-95c8-41fb-abcb-dcbeb0539200.jpg?x-bce-process=image/format,f_auto" w="1440" h="3120" data-weibo="0"&gt;&lt;/p&gt;&lt;p data-vmark="5d58" style="text-align: center;"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2024/9/c401ab7e-0eaa-43a5-aca4-98a90131c42d.jpg?x-bce-process=image/format,f_auto" w="1440" h="3120" data-weibo="1"&gt;&lt;/p&gt;&lt;p data-vmark="4515" style="text-align: left;"&gt;阿维塔 8 月交付 3712 台汽车，&lt;strong&gt;同比增长 88%&lt;/strong&gt;，环比 7 月有小幅增长。&lt;/p&gt;&lt;p data-vmark="43a6" style="text-align: left;"&gt;阿维塔旗下第三款车型 07 于本月正式上市，新车共推出 6 款车型。增程版售价区间为 21.99-27.99 万元，纯电版车型售价区间为 22.99-28.99 万元。该车是阿维塔旗下首款采用纯电增程双动力系统的车型，定位为中型 SUV，并配备了华为乾崑智驾 ADS 3.0 和鸿蒙&amp;nbsp;4.0 车机系统。&lt;/p&gt;</description>
-      <link>https://www.ithome.com/0/799/674.htm</link>
-      <guid>https://www.ithome.com/0/799/674.htm</guid>
-      <pubDate>Mon, 30 Sep 2024 12:30:14 GMT</pubDate>
     </item>
   </channel>
 </rss>
