@@ -2,7 +2,7 @@
   <channel>
     <title>IT之家</title>
     <language>zh-cn</language>
-    <pubDate>Sat, 18 Jan 2025 15:36:48 GMT</pubDate>
+    <pubDate>Sat, 18 Jan 2025 18:40:02 GMT</pubDate>
     <generator>ITHome.com</generator>
     <description>IT之家 - 软媒旗下网站</description>
     <link>https://www.ithome.com/</link>
@@ -293,5 +293,12 @@
       <guid>https://www.ithome.com/0/825/573.htm</guid>
       <pubDate>Sat, 18 Jan 2025 06:48:32 GMT</pubDate>
     </item>
-    </channel>
+    <item>
+      <title>三星专利探索导电按键：生物识别 + 健康追踪，有望重塑交互体验</title>
+      <description>&lt;p data-vmark="63f3"&gt;IT之家 1 月 18 日消息，科技媒体 91Mobile 于 1 月 16 日发布博文，报道称根据最新公示的专利，三星正探索新型导电按键，&lt;strong&gt;或将重塑智能手机和可穿戴设备交互体验。&lt;/strong&gt;&lt;/p&gt;&lt;p data-vmark="d9df"&gt;该按键通过微电流传输和生物识别技术，提升设备安全性和功能性，并兼顾节能和美观。此举也预示着实体按键可能在未来智能设备中回归。&lt;/p&gt;&lt;p data-vmark="b637"&gt;根据专利描述，该导电按键通过特殊材料检测用户的触碰，并将微电流从用户手指传输到设备内部组件。IT之家附上相关图片如下：&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="bdb3"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2025/1/247d044f-a553-44d2-bab0-5389e96c9b9a.jpg?x-bce-process=image/format,f_auto" w="800" h="603" data-weibo="0" class="no-alt-img"&gt;&lt;/p&gt;&lt;p style="text-align: center;" data-vmark="ad1f"&gt;&lt;img src="https://img.ithome.com/newsuploadfiles/2025/1/85e325eb-d4c5-4e56-a84d-90350f9ea322.jpg?x-bce-process=image/format,f_auto" w="800" h="563" data-weibo="1" class="no-alt-img"&gt;&lt;/p&gt;&lt;p data-vmark="0e06"&gt;在结构设计上，导电按键采用多层设计，底层由不锈钢、铝或钛等金属材料制成，兼作按键基座和触摸传感器。金属层上方有一层沉积层，涂有钛或铬等材料，既保护金属，又使按键颜色与设备匹配，营造时尚统一的外观。&lt;/p&gt;&lt;p data-vmark="97ea"&gt;导电按键还能收集指纹等生物识别数据，提升设备安全性，例如用于解锁或支付。此外，它还可以追踪心率或皮肤温度等健康数据。&lt;/p&gt;</description>
+      <link>https://www.ithome.com/0/825/570.htm</link>
+      <guid>https://www.ithome.com/0/825/570.htm</guid>
+      <pubDate>Sat, 18 Jan 2025 06:40:57 GMT</pubDate>
+    </item>
+  </channel>
 </rss>
