@@ -303,7 +303,7 @@ async def chatgpt_ask(question):
     for _ in range(10):
         try:
             answer = ""
-            async for delta, _, _ in answer_stream_gpt4free(msg, cfg, llm_state):
+            for delta, _, _ in llm.answer_stream_gpt4free(msg, cfg, llm_state):
                 answer += delta
             return answer
         except llm.TooManyRequests:
