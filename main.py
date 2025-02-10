@@ -351,9 +351,10 @@ async def is_target_entry(title, desc_text):
         prompt = json.dumps(
             {"title": title, "description": desc_text}, ensure_ascii=False
         )
-        data = await chatgpt_ask(prompt)
+        chatgpt_answer = await chatgpt_ask(prompt)
         assert data is not None
-        data = json.loads(data)
+        print(f"{chatgpt_answer=}")
+        data = json.loads(chatgpt_answer)
         is_useful = data.get("needed_news", True)
         print(f"{is_useful=} {title=}")
         return is_useful
