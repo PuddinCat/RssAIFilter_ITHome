@@ -6,7 +6,6 @@ from typing import (
     Dict,
     Literal,
     List,
-    Sequence,
     TypedDict,
     Tuple,
     Generator,
@@ -17,8 +16,11 @@ from typing import (
 import random
 from copy import deepcopy
 import logging
-import requests
 import os
+import requests
+
+# from g4f.client import Client # import when needed
+
 
 logger = logging.getLogger("llm")
 
@@ -31,6 +33,9 @@ class Config(TypedDict):
 
     model: str
     temperature: float
+
+
+Gpt4FreeState = dict
 
 
 class EvilAPIState(TypedDict):
@@ -47,7 +52,7 @@ class EvilNextWebState(TypedDict):
     counts: Dict[str, int]
 
 
-State = EvilAPIState | EvilNextWebState
+State = EvilAPIState | EvilNextWebState | Gpt4FreeState
 NewStateFunction = Callable[[], State]
 AnswerFunction = Callable[[Messages, Config, State], Tuple[str, Messages, State]]
 AnswerStreamFunction = Callable[
@@ -89,6 +94,12 @@ USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:118.0)"
     + " Gecko/20100101 Firefox/118.0"
 )
+PROXY = None
+if os.environ.get("llm_proxy"):
+    PROXY = {
+        "http": os.environ["llm_proxy"],
+        "https": os.environ["llm_proxy"],
+    }
 
 
 # 通用函数: ------------------------------------------------
@@ -100,10 +111,10 @@ def new_config() -> Config:
     Returns:
         Config: config
     """
-    return Config({"model": "gpt-3.5-turbo-16k", "temperature": 1.05})
+    return Config({"model": "gpt-4o-mini", "temperature": 1.05})
 
 
-def new_msg(init_prompt: str) -> Messages:
+def new_msg(init_prompt: str | Messages) -> Messages:
     """根据初始prompt生成一个message
 
     Args:
@@ -112,7 +123,9 @@ def new_msg(init_prompt: str) -> Messages:
     Returns:
         Messages: 生成的messages
     """
-    return [{"role": "system", "content": init_prompt}]
+    if isinstance(init_prompt, str):
+        return [{"role": "system", "content": init_prompt}]
+    return deepcopy(init_prompt)
 
 
 def append(messages: Messages, role: str, content: str) -> Messages:
@@ -191,6 +204,72 @@ def http_iter(it):
         raise HTTPError() from exp
 
 
+# Gpt4All: ------------------------------------------------
+
+
+# dummy functions
+def new_state_gpt4free() -> Gpt4FreeState:
+    return Gpt4FreeState()
+
+
+def try_fetch_gpt4free(state: Gpt4FreeState) -> Gpt4FreeState:
+    return state
+
+
+def answer_gpt4free(
+    msg: Messages, cfg: Config, state: Gpt4FreeState
+) -> Tuple[str, Messages, Gpt4FreeState]:
+    from g4f.client import Client  # try to import here
+
+    client = Client()
+    for i in range(5):
+        try:
+            response = client.chat.completions.create(
+                model=cfg["model"],
+                messages=msg,
+            )
+            data = response.choices[0].message
+            new_message: Message = {
+                "role": data.role,
+                "content": data.content,
+            }
+            return (new_message["content"], msg + [new_message], state)
+        except Exception as exc:
+            if i != 4:
+                pass
+            raise exc
+    assert False
+
+def answer_stream_gpt4free(
+    msg: Messages, cfg: Config, state: Gpt4FreeState
+) -> Generator[Tuple[str, Messages, Gpt4FreeState], None, None]:
+    from g4f.client import Client  # try to import here
+
+    client = Client()
+    for i in range(5):
+        msg_str = ""
+        try:
+            stream = client.chat.completions.create(
+                model=cfg["model"],
+                messages=msg,
+                stream=True
+            )
+            for chunk in stream:
+                delta = chunk.choices[0].delta
+                token = delta.content or ""
+                msg_str += token
+                new_message: Message = {
+                    "role": "assistant",
+                    "content": msg_str,
+                }
+                yield token, msg + [new_message], state
+        except Exception as exc:
+            if i != 4:
+                pass
+            raise exc
+        return
+    assert False
+
 # EvilAPI: ------------------------------------------------
 
 
@@ -235,7 +314,7 @@ def try_fetch_evil_api(state: EvilAPIState) -> EvilAPIState:
     Returns:
         EvilAPIState: 新的state
     """
-    source_url = os.environ["LLM_JSON_URL"]
+    source_url = "https://monitor.laserbreakout.eu.org/6b847f17-74ad-4f2c-aa74-0c05e6f08e96/Free-ChatGPT-ChatBot/valid.json"
     data = None
     new_state = deepcopy(state)
     try:
@@ -292,7 +371,11 @@ def answer_evil_api(
         url = choose_url(state["urls"], state["counts"])
         try:
             resp = requests.post(
-                url + "/api/chat", json=json_data, headers=headers, timeout=30
+                url + "/api/chat",
+                json=json_data,
+                headers=headers,
+                proxies=PROXY,
+                timeout=30,
             )
         except requests.RequestException:
             if url in new_state["counts"] and new_state["counts"][url] >= 2:
@@ -323,29 +406,17 @@ def new_state_evil_next_web() -> EvilNextWebState:
         {
             "counts": {},
             "urls": [
-                "http://171.108.183.22:8889",
-                "http://43.153.63.3:3001",
-                "http://47.242.117.63:8081",
-                "http://43.132.116.7:3001",
-                "http://154.31.24.42:3001",
-                "http://23.94.75.7:3001",
-                "http://43.132.116.7:3001",
-                "http://54.250.169.86:3001",
-                "http://43.153.63.3:3001",
-                "http://124.70.27.137:8181",
-                "http://23.94.75.7:3001",
-                "http://152.136.32.26:8081",
-                "http://124.70.27.137:8181",
-                "http://192.144.216.117:5001",
-                "http://154.31.24.15:3001",
-                "http://45.66.217.241:3001",
+                "http://156.240.112.31:3000",
+                "http://124.220.174.51:3000",
+                "http://180.76.155.3:3000",
+                "http://nj.more-share.com",
             ],
         }
     )
 
 
 def try_fetch_evil_next_web(state: EvilNextWebState) -> EvilNextWebState:
-    source_url = os.environ["LLM_JSON_URL"]
+    source_url = "https://monitor.laserbreakout.eu.org/6b847f17-74ad-4f2c-aa74-0c05e6f08e96/Free-ChatGPT-ChatBot/valid.json"
     data = None
     new_state = deepcopy(state)
     try:
@@ -401,6 +472,7 @@ def answer_stream_evil_next_web(
                 f"{url}/api/openai/v1/chat/completions",
                 json=json_data,
                 headers=headers,
+                proxies=PROXY,
                 timeout=5,
                 stream=True,
             )
@@ -456,6 +528,15 @@ class LLMContext(TypedDict):
 class LLMStreamContext(LLMContext):
     answer_stream_func: AnswerStreamFunction
 
+def new_context_gpt4free(init_prompt: str | Messages) -> LLMStreamContext:
+    return {
+        "msg": new_msg(init_prompt),
+        "cfg": new_config(),
+        "state": new_state_gpt4free(),
+        "answer_func": answer_gpt4free,
+        "answer_stream_func": answer_stream_gpt4free,
+    }
+
 
 def new_context_evil_api(init_prompt: str) -> LLMContext:
     return {
@@ -499,9 +580,10 @@ def answer_stream_context(
 
 
 def main():
-    context = new_context_evil_next_web("你是CatGPT, 一只说话非常可爱的猫娘, 你需要协助你的人类主人回答一系列问题。")
+    context = new_context_gpt4free(
+        "你是CatGPT, 一只说话非常可爱的猫娘, 你需要协助你的人类主人回答一系列问题。"
+    )
     context["msg"] = append(context["msg"], "user", "介绍一下你自己")
-    context["state"] = try_fetch_evil_next_web(context["state"])
     answer, context = answer_context(context)
     print(answer)
     context["msg"] = append(context["msg"], "user", "简单介绍一下猫娘和猫的区别")

@@ -19,8 +19,8 @@ from bs4 import BeautifulSoup
 from telegram import constants, InputMediaPhoto, Bot, error
 
 
-llm_state = llm.new_state_evil_next_web()
-llm_state = llm.try_fetch_evil_next_web(llm_state)
+llm_state = llm.new_state_gpt4free()
+llm_state = llm.try_fetch_gpt4free(llm_state)
 aclient = httpx.AsyncClient(
     headers={
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:109.0) Gecko/20100101 Firefox/117.0"
@@ -295,69 +295,6 @@ async def parse_lines(lines_iter: Iterable[bytes]) -> Generator[str, None, None]
         yield choice["delta"].get("content", "")
 
 
-async def answer_stream_evil_next_web(
-    msg: llm.Messages, cfg: llm.Config, state: llm.EvilNextWebState
-) -> Generator[Tuple[str, llm.Messages, llm.EvilNextWebState], None, None]:
-    """回答传入的消息，将回答以流式传输
-
-    Args:
-        msg (Messages): 消息
-        cfg (Config): 设置
-        state (EvilNextWebState): 状态
-
-    Raises:
-        UnknownError: HTTP发起成功但是产生未知错误
-        HTTPError: HTTP失败
-
-    Yields:
-        Generator[Tuple[str, Messages, EvilNextWebState], None, None]:
-            回答的每一个字符，新的消息和状态
-    """
-    json_data = {
-        "messages": msg,
-        "stream": True,
-        "model": cfg["model"],
-        "temperature": cfg["temperature"],
-        "presence_penalty": 0,
-    }
-    new_message, new_state = llm.append(msg, "assistant", ""), deepcopy(state)
-    is_http_success = False
-    errors = []
-    for _ in range(3):
-        url = llm.choose_url(state["urls"], state["counts"])
-        try:
-            async with aclient.stream(
-                method="POST",
-                url=f"{url}/api/openai/v1/chat/completions",
-                json=json_data,
-                timeout=5,
-            ) as resp:
-                if resp.status_code == 429:
-                    errors.append(llm.TooManyRequests())
-                    await asyncio.sleep(10)
-                    continue
-                if resp.status_code != 200:
-                    errors.append(
-                        llm.HTTPError(f"Wrong status code: {resp.status_code}")
-                    )
-                    continue
-                is_http_success = True
-                new_state["counts"][url] = new_state["counts"].get(url, 0) + 1
-                async for delta in parse_lines(resp.aiter_lines()):
-                    new_message[-1]["content"] += delta
-                    yield delta, new_message, new_state
-                return
-        except Exception as exp:
-            if url in state["counts"] and state["counts"][url] >= 2:
-                state["counts"][url] -= 1
-            errors.append(llm.HTTPError(exp))
-            continue
-
-    if is_http_success:
-        raise llm.UnknownError(errors)
-    raise llm.HTTPError(errors)
-
-
 async def chatgpt_ask(question):
     msg = llm.new_msg(INIT_PROMPT)
     msg += LLM_EXTRA_MESSAGES
@@ -366,7 +303,7 @@ async def chatgpt_ask(question):
     for _ in range(10):
         try:
             answer = ""
-            async for delta, _, _ in answer_stream_evil_next_web(msg, cfg, llm_state):
+            async for delta, _, _ in answer_stream_gpt4free(msg, cfg, llm_state):
                 answer += delta
             return answer
         except llm.TooManyRequests:
