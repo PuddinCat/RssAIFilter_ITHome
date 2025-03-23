@@ -128,7 +128,8 @@ LLM_EXTRA_MESSAGES: llm.Messages = [
             {
                 "title": "中国发展高层论坛 2025 年年会今日在北京召开，宇树科技创始人答记者问",
                 "description": "IT之家 3 月 23 日消息，中国发展高层论坛 2025 年年会今日在北京召开，中国新闻社记者询问宇树科技创始人王兴兴：“家用人形机器人何时上市？”王兴兴坦言：“其实我们目前像工业端会发展更快一点，家用还是会更慢一点，大家都在推进这个事情，但是具体多长时间，也不是特别好预估，我觉得，也不是最近两三年可以实现的问题。”宇树科技旗下的 Unitree H1 和 G1 人形机器人 2 月 12 日在京东线上首发开售，售价分别为\xa065 万元和 9.9 万元。不过在上架后不久便被下架。据IT之家此前报道，宇树\xa0Unitree H1 机器人于 2023 年 8 月首次公布，关键尺寸为（1520+285）/570/220mm，大腿和小腿长度 400mm×2，手臂总长度 338mm×2；关节单元极限扭矩：膝关节约 360N・m、髋关节约 220N・m、踝关节约 45N・m、手臂关节约 75N・m；行走速度大于 1.5m/s，潜在运动能力＞5m/s；内置 15Ah 电池，最大电压 67.2V。宇树 G1\xa0人形机器人于 2024 年 5 月发布，定价\xa09.9 万元起，官方描述为“人形智能体、AI 化身”。该机器人体重约 35kg、身高约 127cm，拥有 23~43 个关节电机，关节最大扭矩 120N・m；支持模仿 & 强化学习驱动，“在 AI 加速下的机器人技术，每天都在升级进化”。",
-            }
+            },
+            ensure_ascii=False,
         ),
     },
     {
@@ -152,7 +153,7 @@ async def get_filtered_rss():
         headers={
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:109.0) Gecko/20100101 Firefox/117.0"
         },
-        timeout=60,
+        timeout=10,
     )
     tree = ET.parse(StringIO(r.text))
 
@@ -316,6 +317,8 @@ async def main():
 
     new_items = await get_filtered_rss()
     new_items = [item for item in new_items if item["guid"] not in visited]
+    new_items = new_items[:10]
+    print(f"{len(new_items)=}")
     chatgpt_transforms = await asyncio.gather(
         *[chatgpt_transform(item["title"], item["description"]) for item in new_items]
     )
@@ -346,7 +349,7 @@ async def main():
     visited += [
         item["guid"]
         for item, chatgpt_transform in zip(new_items, chatgpt_transforms)
-        if not chatgpt_transform["is_useful_news"]
+        if chatgpt_transform is not None and not chatgpt_transform["is_useful_news"]
     ]
     visited += [
         item["guid"] for item, is_success in zip(new_items, result) if is_success
