@@ -12,8 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
+        with:
+          python-version: '3.12' 
       - name: Install python packages
-        run: python3 -m pip install python-telegram-bot requests beautifulsoup4 feedparser httpx pillow g4f[all]
+        run: python3 -m pip install -r requirements.lock
       - name: Config Github
         run: |
           git config --local user.email "actions@github.com"
