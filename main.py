@@ -18,6 +18,7 @@ import feedparser
 from bs4 import BeautifulSoup
 from telegram import constants, InputMediaPhoto, Bot, error
 
+telegram_lock = asyncio.Lock()
 llm_state = llm.new_state_gpt4free()
 aclient = httpx.AsyncClient(
     headers={
@@ -283,10 +284,11 @@ async def send_post(
             ]
     for _ in range(10):
         try:
-            await bot.send_media_group(
-                chat_id=chat_id,
-                media=media,
-            )  # type: ignore
+            async with telegram_lock:
+                await bot.send_media_group(
+                    chat_id=chat_id,
+                    media=media,
+                )  # type: ignore
         except error.RetryAfter:
             print("rate limit")
             await asyncio.sleep(20)
