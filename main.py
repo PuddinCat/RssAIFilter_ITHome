@@ -336,7 +336,7 @@ async def main():
                 "@ithome_aifilter",
                 item["title"],
                 " ".join(
-                    "#" + tag.replace(" ", "-") for tag in chatgpt_transform["tags"]
+                    "#" + tag.replace(" ", "_") for tag in chatgpt_transform["tags"]
                 ),
                 item["link"],
                 image,
