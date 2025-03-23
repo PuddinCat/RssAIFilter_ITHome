@@ -49,9 +49,11 @@ INIT_PROMPT = """\
 你的流程如下：
 
 1. 分析新闻的内容，并使用一句话总结。
-2. 根据第三部分的规则判断新闻是否为目标信息。
-3. 检查上方的分析和判断是否正确，如果不正确请分析原因。
-4. 判断其是不是目标信息，并输出为needed_news，类型为bool
+2. 根据下一部分的规则判断新闻是否为目标信息。
+3. 判断其是不是目标信息，并输出为needed_news，类型为bool
+4. 根据下面的所有标签，用一句话判断每个标签是否和新闻相符合
+5. 列出提到的所有公司、国家和地区的中文名（如苹果、美国、香港等），作为额外的标签（extra_tags）输出
+6. 根据下面的所有标签给各个新闻打上标签，并加上extra_tags的内容，输出为JSON列表
 
 # 规则
 
@@ -59,10 +61,24 @@ INIT_PROMPT = """\
 - 某某产品开卖不是目标信息。
 - 电影上线信息不是目标信息。
 - 手机系统更新不是目标信息。
-- 和汽车相关的新闻，尤其是宝马、法拉第未来、比亚迪、极狐汽车等汽车品牌相关的信息不是目标信息。
 - 软件更新新版本不是目标信息。
 - 商店打折，京东、淘宝、拼多多优惠活动不是目标信息。
 - 不匹配以上规则的所有新闻都是目标信息
+
+# 所有标签
+
+- AI: 和大语言模型、AIGC、芯片等领域相关，和CUDA等技术相关，以及英伟达等GPU公司、OpenAI, DeepSeek等AI技术公司相关
+- 机器人: 和人形机器人等机器人相关的新闻
+- 无人机: 和无人机相关，或者和大疆等公司的新闻
+- 芯片: 和芯片相关的新闻
+- 游戏: 和电子游戏相关的，和索尼、任天堂等游戏公司相关的新闻，特别注意英伟达与AMD的新闻不属于此类
+- 互联网: 和互联网行业，或者和腾讯、阿里巴巴等互联网公司相关的新闻
+- 饮食: 和可口可乐、瑞幸咖啡等饮料相关，或者和食品相关的新闻
+- 数码: 和手机、电脑、相机、游戏机等数码产品相关的新闻
+- 汽车: 和宝马、特斯拉、比亚迪、小米汽车等汽车相关的新闻
+- 国内: 和中华人民共和国有关的新闻
+- 国外: 和美国、欧洲国家、日本等外国相关的新闻
+- 港台: 和香港、台湾相关的新闻
 
 # 输入输出格式
 
@@ -85,36 +101,47 @@ INIT_PROMPT = """\
         "不是汽车新闻",
         "不是软件更新"
     ],
-    "check": [
-        "确实不包含新款产品信息",
-        "确实不是产品开卖信息",
-        "确实不是电影上线信息",
-        "确实不是手机系统更新",
-        "确实不是汽车新闻",
-        "确实不是软件更新",
+    "needed_news": true,
+    "analyze_tags": [
+        "AI: 和英伟达与AI芯片相关",
+        "机器人: 和机器人无关",
+        "无人机: 和无人机无关",
+        "芯片: 提到芯片，和芯片有关",
+        "游戏: 虽然与英伟达有关，但和电子游戏无关",
+        "互联网: 和互联网无关",
+        "饮食: 和饮食无关",
+        "数码: 和数码无关",
+        "汽车: 和汽车无关",
+        "国内: 和国内无关",
+        "国外: 和欧盟有关，是与欧盟有关的新闻",
+        "港台: 和港台无关"
     ],
-    "final_answer": "是目标信息",
-    "needed_news": true
+    "extra_tags": [
+        "苹果",
+        "欧盟"
+    ],
+    "tags": [
+        "AI", "芯片", "国外", 
+        "苹果", "欧盟"
+    ]
 }
 """
 
 LLM_EXTRA_MESSAGES: llm.Messages = [
     {
         "role": "user",
-        "content": """
-{"title": "问界新 M7 车型今日大定超 2600 台，消息称本月品牌新增订单突破 3 万", "description": "IT之家 9 月 30 日消息，这个月内，问界新 M7 的热度持续维持着有增无减的态势。自从该车上市后，日均订单超过 1500 台，大定累计已经超过 2 万台。目前最新的数据是 9 月 29 日、30 日的，其中 29 日大定超过 2400 台，30 日的大定数量则突破了 2600 台。这就相当于昨天今天两日之内，问界新 M7 的大定数量超过 5000 台。IT之家此前报道，该车曾在 9 月 17 日取得本月大定数量记录：2700 台。目前来看，问界似乎已经形成了“每逢破 2000 必发海报庆祝”的传统。汽车销售情况分析媒体“车 fans”创始人 @孙少军 09 分析称，截至今晚，问界品牌全系车型新增订单量已突破了 3 万。同时他表示，华为 Mate 系列机型也给问界带来了“排山倒海”的热度，新增订单量环比上月暴涨 8 倍。当然了，明天作为 10 月的第 1 天，不出意外的话也是各路车企集中汇报 9 月销量的日子。问界品牌 9 月的销量究竟如何，最快将在明天之内见分晓，IT之家将持续关注。问界新 M7 搭载华为 ADS 2.0 高阶智能驾驶系统，可实现不依赖高精地图的高速、城区智能驾驶，并号称预计今年 12 月城区 NCA 实现“全国都能开”。新车配备 1 个顶置激光雷达、3 个毫米波雷达、11 个高清视觉感知摄像头及 12 个超声波雷达等 27 个感知硬件，支持园区代客泊车、超窄车位泊车。"}
-""".strip(),
+        "content": "IT之家 3 月 23 日消息，中国发展高层论坛 2025 年年会今日在北京召开，中国新闻社记者询问宇树科技创始人王兴兴：“家用人形机器人何时上市？”王兴兴坦言：“其实我们目前像工业端会发展更快一点，家用还是会更慢一点，大家都在推进这个事情，但是具体多长时间，也不是特别好预估，我觉得，也不是最近两三年可以实现的问题。”宇树科技旗下的 Unitree H1 和 G1 人形机器人 2 月 12 日在京东线上首发开售，售价分别为\xa065 万元和 9.9 万元。不过在上架后不久便被下架。据IT之家此前报道，宇树\xa0Unitree H1 机器人于 2023 年 8 月首次公布，关键尺寸为（1520+285）/570/220mm，大腿和小腿长度 400mm×2，手臂总长度 338mm×2；关节单元极限扭矩：膝关节约 360N・m、髋关节约 220N・m、踝关节约 45N・m、手臂关节约 75N・m；行走速度大于 1.5m/s，潜在运动能力＞5m/s；内置 15Ah 电池，最大电压 67.2V。宇树 G1\xa0人形机器人于 2024 年 5 月发布，定价\xa09.9 万元起，官方描述为“人形智能体、AI 化身”。该机器人体重约 35kg、身高约 127cm，拥有 23~43 个关节电机，关节最大扭矩 120N・m；支持模仿 & 强化学习驱动，“在 AI 加速下的机器人技术，每天都在升级进化”。",
     },
     {
         "role": "assistant",
-        "content": """
-{"summerize": "这是一篇关于问界新M7车型销售情况的文章，今年9月份订单数量突破了3万台。其中，最新数据显示，9月29日和30日的大定数量分别超过2400台和2600台。同时，华为Mate系列机型的推出也给问界品牌带来了热度，新增订单量环比上月暴涨8倍。明天将是各大车企集中发布9月销量的日子，IT之家将持续关注问界品牌的销售情况。问界新M7车型搭载了华为ADS 2.0高阶智能驾驶系统，拥有多项高科技感知硬件。", "analyze": ["不包含新款产品信息", "不是产品开卖信息", "不是电影上线信息", "不是手机系统更新", "这片文章是有关新品汽车上市的新闻，属于非目标信息中的汽车新闻", "不是软件更新"], "check": ["确实不包含新款产品信息", "确实不是产品开卖信息", "确实不是电影上线信息", "确实不是手机系统更新", "问界是一个汽车品牌，属于非目标新闻中的汽车新闻", "确实不是软件更新"], "final_answer": "是无用信息", "needed_news": false}
-""".strip(),
+        "content": '{\n    "summerize": "这篇文章讨论了宇树科技创始人王兴兴对家用人形机器人上市时间的看法，表示在最近两三年内无法实现。",\n    "analyze": [\n        "不包含新款产品信息",\n        "不是产品开卖信息",\n        "不是电影上线信息",\n        "不是手机系统更新",\n        "不是汽车新闻",\n        "不是软件更新"\n    ],\n    "needed_news": true,\n    "analyze_tags": [\n        "AI: 和人形机器人及AI相关",\n        "机器人: 讨论了人形机器人",\n        "无人机: 和无人机无关",\n        "芯片: 和芯片无关",\n        "游戏: 和游戏无关",\n        "互联网: 和互联网无关",\n        "饮食: 和饮食无关",\n        "数码: 和数码无关",\n        "汽车: 和汽车无关",\n        "国内: 和国内有关，涉及中国",\n        "国外: 和国外无关",\n        "港台: 和港台无关"\n    ],\n    "extra_tags": [\n        "宇树科技"\n    ],\n    "tags": [\n        "AI", "机器人", "国内", \n        "宇树科技"\n    ]\n}',
     },
 ]
 
 HTML_MESSAGE = """
 <a href="{link}">{title}</a>
+
+{description}
 """
 
 
@@ -346,21 +373,22 @@ def check_result_add(guid, result):
         json.dump(data, f)
 
 
-async def is_target_entry(title, desc_text):
+async def is_target_entry(title, desc_text) -> tuple[bool | None, list]:
     try:
         prompt = json.dumps(
             {"title": title, "description": desc_text}, ensure_ascii=False
         )
         chatgpt_answer = await chatgpt_ask(prompt)
         assert chatgpt_answer is not None
-        print(f"{chatgpt_answer=}")
+        print(f"{desc_text=}, {chatgpt_answer=}")
         data = json.loads(chatgpt_answer)
         is_useful = data.get("needed_news", True)
-        print(f"{is_useful=} {title=}")
-        return is_useful
+        tags = list(set(data.get("tags", []) + data.get("extra_tags", [])))
+        print(f"{is_useful=} {title=} {tags=}")
+        return is_useful, tags
     except Exception:
         print_exc()
-        return True
+        return None, []
 
 
 def force_find(element, xpath):
@@ -397,7 +425,11 @@ async def send_post(bot: Bot, chat_id: int | str, post: Post) -> bool:
         media = [
             InputMediaPhoto(
                 content,
-                caption=HTML_MESSAGE.format(title=post["title"], link=post["link"]),
+                caption=HTML_MESSAGE.format(
+                    title=post["title"],
+                    description=post["description"],
+                    link=post["link"],
+                ),
                 parse_mode=constants.ParseMode.HTML,
             )
         ]
@@ -406,7 +438,11 @@ async def send_post(bot: Bot, chat_id: int | str, post: Post) -> bool:
             media = [
                 InputMediaPhoto(
                     file.read(),
-                    caption=HTML_MESSAGE.format(title=post["title"], link=post["link"]),
+                    caption=HTML_MESSAGE.format(
+                        title=post["title"],
+                        description=post["description"],
+                        link=post["link"],
+                    ),
                     parse_mode=constants.ParseMode.HTML,
                 )
             ]
@@ -436,6 +472,7 @@ async def send_post(bot: Bot, chat_id: int | str, post: Post) -> bool:
             print_exc()
             return False
         return True
+    return False
 
 
 async def get_filtered_rss():
@@ -462,10 +499,13 @@ async def get_filtered_rss():
             if not cached_result:
                 chan.remove(element)
         else:
-            result = await is_target_entry(title, desc)
-            check_result_add(guid, result)
-            if not result:
+            is_needed, tags = await is_target_entry(title, desc)
+            check_result_add(guid, is_needed)
+            if not is_needed:
                 chan.remove(element)
+            else:
+                for child in element.findall("description"):
+                    child.text = " ".join("#" + tag.replace(" ", "_") for tag in tags)
 
     tasks = []
     for element in chan.findall("item"):
