@@ -319,7 +319,6 @@ async def main():
 
     new_items = await get_filtered_rss()
     new_items = [item for item in new_items if item["guid"] not in visited]
-    new_items = new_items[:10]
     print(f"{len(new_items)=}")
     chatgpt_transforms = await asyncio.gather(
         *[chatgpt_transform(item["title"], item["description"]) for item in new_items]
