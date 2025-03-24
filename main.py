@@ -71,7 +71,7 @@ INIT_PROMPT = """\
 - 饮食: 和可口可乐、瑞幸咖啡等饮料相关，或者和食品相关的新闻
 - 数码: 和手机、电脑、相机、游戏机等数码产品相关的新闻
 - 汽车: 和宝马、特斯拉、比亚迪、小米汽车等汽车相关的新闻
-- 网安: 软件漏洞，黑客攻击等和网络安全相关的新闻
+- 网安: 软件漏洞，黑客攻击等    和网络安全相关的新闻
 - 国内: 和中华人民共和国有关的新闻
 - 国外: 和美国、欧洲国家、日本等外国相关的新闻
 - 港台: 和香港、台湾相关的新闻
@@ -201,7 +201,6 @@ async def chatgpt_transform(title, description):
         data = json.loads(chatgpt_answer)
         is_useful_news = data.get("is_useful_news", True)
         tags = list(set(data.get("tags", []) + data.get("extra_tags", [])))
-        print(f"{title=} {is_useful_news=} {tags=}")
         return {
             "is_useful_news": is_useful_news,
             "tags": tags,
@@ -322,7 +321,7 @@ async def main():
     new_items = await get_filtered_rss()
     new_items = [item for item in new_items if item["guid"] not in visited]
     print(f"{len(new_items)=}")
-    chatgpt_transforms = await asyncio.gather(
+    chatgpt_answers = await asyncio.gather(
         *[chatgpt_transform(item["title"], item["description"]) for item in new_items]
     )
     images = [
@@ -343,7 +342,7 @@ async def main():
                 image,
             )
             for item, chatgpt_transform, image in zip(
-                new_items, chatgpt_transforms, images
+                new_items, chatgpt_answers, images
             )
             if chatgpt_transform
             if chatgpt_transform["is_useful_news"]
@@ -351,12 +350,16 @@ async def main():
     )
     visited += [
         item["guid"]
-        for item, chatgpt_transform in zip(new_items, chatgpt_transforms)
-        if chatgpt_transform is not None and not chatgpt_transform["is_useful_news"]
+        for item, chatgpt_answer in zip(new_items, chatgpt_answers)
+        if chatgpt_answer is not None and not chatgpt_answer["is_useful_news"]
     ]
     visited += [
         item["guid"] for item, is_success in zip(new_items, result) if is_success
     ]
+    for news, is_success, chatgpt_answer in zip(new_items, result, chatgpt_answers):
+        is_useful_news = chatgpt_answer["is_useful_news"] if chatgpt_answer is not None else None
+        tags = chatgpt_answer["tags"] if chatgpt_answer is not None else None
+        print(f"{news['title']=} {is_useful_news=} {tags=} {is_success=}")
 
     Path("./visited.json").write_text(json.dumps(list(visited)))
 
