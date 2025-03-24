@@ -329,23 +329,28 @@ async def main():
         for item in new_items
     ]
 
+    new_items_useful = [
+        (
+            item,
+            image,
+            " ".join("#" + tag.replace(" ", "_") for tag in chatgpt_transform["tags"]),
+        )
+        for item, chatgpt_transform, image in zip(new_items, chatgpt_answers, images)
+        if chatgpt_transform
+        if chatgpt_transform["is_useful_news"]
+    ]
+
     result = await asyncio.gather(
         *[
             send_post(
                 bot,
                 "@ithome_aifilter",
-                item["title"],
-                " ".join(
-                    "#" + tag.replace(" ", "_") for tag in chatgpt_transform["tags"]
-                ),
-                item["link"],
+                news["title"],
+                tags_str,
+                news["link"],
                 image,
             )
-            for item, chatgpt_transform, image in zip(
-                new_items, chatgpt_answers, images
-            )
-            if chatgpt_transform
-            if chatgpt_transform["is_useful_news"]
+            for news, image, tags_str in new_items_useful
         ]
     )
     visited += [
@@ -354,12 +359,15 @@ async def main():
         if chatgpt_answer is not None and not chatgpt_answer["is_useful_news"]
     ]
     visited += [
-        item["guid"] for item, is_success in zip(new_items, result) if is_success
+        news["guid"]
+        for (news, _, _), is_success in zip(new_items_useful, result)
+        if is_success
     ]
-    for news, is_success, chatgpt_answer in zip(new_items, result, chatgpt_answers):
-        is_useful_news = chatgpt_answer["is_useful_news"] if chatgpt_answer is not None else None
+    for (news, _, _), is_success, chatgpt_answer in zip(
+        new_items_useful, result, chatgpt_answers
+    ):
         tags = chatgpt_answer["tags"] if chatgpt_answer is not None else None
-        print(f"{news['title']=} {is_useful_news=} {tags=} {is_success=}")
+        print(f"{news['title']=} {tags=} {is_success=}")
 
     Path("./visited.json").write_text(json.dumps(list(visited)))
 
