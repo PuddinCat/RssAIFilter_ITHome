@@ -324,11 +324,12 @@ async def main():
     chatgpt_answers = await asyncio.gather(
         *[chatgpt_transform(item["title"], item["description"]) for item in new_items]
     )
+    print(f"{len(chatgpt_answers)=}")
     images = [
         find_image(item["description"] if isinstance(item["description"], str) else "")
         for item in new_items
     ]
-
+    print(f"{len(images)=}")
     new_items_useful = [
         (
             item,
@@ -339,6 +340,7 @@ async def main():
         if chatgpt_transform
         if chatgpt_transform["is_useful_news"]
     ]
+    print(f"{len(new_items_useful)=}")
 
     result = await asyncio.gather(
         *[
