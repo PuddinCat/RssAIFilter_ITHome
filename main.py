@@ -246,6 +246,11 @@ async def send_post(
         bool: 是否发送成功
     """
     media = None
+    aclient = httpx.AsyncClient(
+        headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:109.0) Gecko/20100101 Firefox/117.0"
+        }
+    )
     if image is not None:
         content = None
         for _ in range(3):
