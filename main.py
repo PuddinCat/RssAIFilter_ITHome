@@ -355,6 +355,7 @@ async def main():
             for news, image, tags_str in new_items_useful
         ]
     )
+    print(f"{len(result)=}")
     visited += [
         item["guid"]
         for item, chatgpt_answer in zip(new_items, chatgpt_answers)
@@ -365,6 +366,7 @@ async def main():
         for (news, _, _), is_success in zip(new_items_useful, result)
         if is_success
     ]
+    print(f"{len(visited)=}")
     for (news, _, _), is_success, chatgpt_answer in zip(
         new_items_useful, result, chatgpt_answers
     ):
